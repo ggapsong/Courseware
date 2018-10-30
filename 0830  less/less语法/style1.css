@@ -1,0 +1,36 @@
+.box {
+  width: 500px;
+  height: 300px;
+  background: #0c0e0f;
+}
+.box .main {
+  height: 30px;
+  background: #00b6df;
+  width: 5px;
+}
+.box .main a {
+  color: #f00;
+}
+.box ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #f00;
+}
+.box ul li {
+  height: 40px;
+  line-height: 40px;
+  border: 5px solid #f00;
+}
+.box ul li:nth-child(2n) {
+  background: #ddd;
+}
+.box ul li:hover {
+  background: #f0a238;
+}
+.box ul li span {
+  background: #f00;
+}
+.box ul li a {
+  color: #f00;
+}

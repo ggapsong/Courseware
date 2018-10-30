@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            background: #0c5460;
+            overflow: hidden;
+            /*display: inline-block;*/
+        }
+        .item{
+            width:100px;
+            height:100px;
+            background:#0c5460;
+            float: left;
+        }
+        .item1{
+            width:100px;
+            height:100px;
+            background:#f5ad51;
+            margin-top:100px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <div class="item1"></div>
+</div>
+asdjaosijo
+
+<!--
+    Block Formatting Context 块格式化上下文
+    Inline Formatting Context  IFC 内联格式化上下文
+    BFC是什么？
+        是一套渲染规则
+
+    在BFC里面的块元素会纵向排列
+
+    BFC里面的内容不会影响到BFC外面的内容,相当于是给元素外面建立起了一堵围墙
+
+触发BFC的条件
+    float的值不为none
+    overflow的值不为visible
+    display的值为 table-cell、table-caption和inline-block之一
+    position的值不为 static或 relative中的任何一个
+
+    BFC的作用：
+        1，清浮动
+        2，不被浮动元素覆盖
+        3，阻止父子元素的 margin传递
+-->
+
+</body>
+</html>

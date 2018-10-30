@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .btn{
+            height: 20px;
+            display: inline-block;
+            font:12px/20px '宋体';
+            color: #c65c22;
+        }
+        .btn span{
+            float: left;
+        }
+        .btn .left{
+            width:8px;
+            height:20px;
+            background: url("images/btn_03.png") no-repeat;
+        }
+        .btn .center{
+            height:20px;
+            background: url("images/btn_04.png") repeat-x;
+        }
+        .btn .right{
+            width:6px;
+            height:20px;
+            background: url("images/btn_06.png") no-repeat;
+        }
+
+        .box{
+            height:18px;
+            border:1px solid #f5dead;
+            background: #f6f4df;
+            font:12px/18px '宋体';
+            display: inline-block;
+            border-radius: 2px;
+        }
+        .box span{
+            display: inline-block;
+            width:0;
+            height: 0;
+            border-width:5px 6px;
+            border-style:solid;
+            border-color:transparent #8dd5f4 transparent transparent;
+        }
+    </style>
+</head>
+<body>
+
+<div class="btn">
+    <span class="left"></span>
+    <span class="center">运动时来抢</span>
+    <span class="right"></span>
+</div>
+
+<div class="box"><span></span>运动时来抢</div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 75px;
+        }
+        body{
+            margin: 0;
+        }
+        .box{
+            height: 50px;
+            background: #999;
+        }
+        .item{
+            width:2.48rem;
+            height: 100%;
+            background: #96fff6;
+            float: left;
+        }
+        .item:nth-child(2){
+            background: #ecedba;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+    <!--
+
+        用百分比去进行布局的时候，有很多问题：
+            需要手动计算
+            如果碰到高度不固定的页面，没有办法计算高度的百分比
+            所有元素的百分比都是根据父级来进行计算的
+
+        需求：如果有一个东西，可以让所有的宽高在计算百分比的时候，都参照这个东西，那么移动端页面布局就搞定了——————  rem;
+
+            rem：r: Root 指的是根元素（html）
+                它也是一个相对单位，它始终取决于HTML标签的文字大小
+            em:  是一个相对单位，大小取决于当前元素的文字大小
+
+            <!-- rem：75px； -->
+    -->
+
+</body>
+</html>

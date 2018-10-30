@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width:800px;
+            height:100px;
+            border:1px solid #1b6d85;
+        }
+        .item1{
+            width: 100px;
+            height:100px;
+            background: #f0a238;
+            float: left;
+
+            margin-left: 50px;
+        }
+        .item2{
+            width: 100px;
+            height:100px;
+            background: #8dd5f4;
+            float: left;
+        }
+        .item3{
+            width: 100px;
+            height:100px;
+            background: #f00283;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+</div>
+
+
+<!--
+    浮动问题:
+        脱离文档流；导致父级的高度撑不开（父级高度塌陷）
+
+    文档流：将窗体自上而下分成一行一行,并在每行中按从左至右的挨次排放元素,即为文档流。
+    文档流：元素在页面中的位置取决于它在HTML当中的位置
+
+    浮动：  让元素脱离文档流，按照指定的方向进行移动，当碰到同级的浮动元素或者父级的边界的时候才会停下来
+-->
+
+</body>
+</html>

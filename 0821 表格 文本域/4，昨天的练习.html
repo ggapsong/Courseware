@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul{
+            margin: 0;
+            padding:0;
+            list-style: none;
+        }
+        img{
+            vertical-align: top;
+        }
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+        .box{
+            width:960px;
+            margin: 0 auto;
+        }
+        .title{
+            height:36px;
+            border: 1px solid #2e5b8b;
+            background: url("images/163_03.png") repeat-x;
+            border-radius: 3px 3px 0 0;
+        }
+        .content{
+            height:547px;
+            border:1px solid #999;
+            border-top:0;
+        }
+        .content .contLeft{
+            width:642px;
+            border-right:1px solid #999;
+            float: left;
+            height: 100%;
+        }
+        .contLeft .contTitle{
+            height:34px;
+            padding:51px 100px 22px 145px;
+            background: #f1b0b7;
+            background-clip: content-box;
+        }
+        .contLeft .register{
+
+        }
+        .register li{
+            height:61px;
+            padding-top:12px;
+            font:14px/27px '宋体';
+        }
+        .register li .name{
+            width:136px;
+            text-align: right;
+            float: left;
+        }
+        .register li .name em{
+            color: #f00;
+            font-style: normal;
+            padding-right:5px;
+            line-height: 20px;
+            vertical-align: top;
+            display: inline-block;
+        }
+        .register li .regRight{
+            float: left;
+            width: 400px;
+            height:100%;
+            margin-left: 10px;
+        }
+
+
+        .register li.verification{
+            padding-top:22px;
+            height:70px;
+        }
+
+        .verification .inputBox{
+            width:213px;
+            height:100%;
+            float: left;
+            margin-left: 10px;
+        }
+        .verification .verMain{
+            float: left;
+            width:121px;
+            height:100%;
+        }
+        .verification .verMain img{
+            width:120px;
+            height:50px;
+            border:1px solid #999;
+            margin-top:-12px;
+        }
+        .verification .verMain a{
+            display: inline-block;
+            width:100%;
+            font:12px/30px '宋体';
+            text-align: center;
+            color: #003399;
+            text-decoration: none;
+        }
+
+        .register .verification .description{
+            padding-top:13px;
+            line-height:30px;
+        }
+
+        .register .input{
+            width:312px;
+            height:25px;
+            border:1px solid #999;
+            border-radius: 3px;
+            box-shadow:inset 3px 3px 3px 0 rgba(0,0,0,0.9);
+            padding:0 10px;
+            line-height:25px;
+        }
+        .register .inputSm{
+            width:186px;
+        }
+        .register .inputMd{
+            width:190px;
+        }
+        .register .description{
+            font:12px/34px '宋体';
+            color: #999999;
+        }
+
+        .register li.protocol{
+            height:26px;
+            padding:9px 0 13px 145px;
+        }
+        .register li.protocol input{
+            width:13px;
+            height:13px;
+            vertical-align: top;
+            margin-top:7px;
+        }
+        .register li.protocol span{
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .content .contRight{
+            width:315px;
+            background: #f5f5f5;
+            float: left;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <div class="title"></div>
+    <div class="content">
+        <div class="contLeft">
+            <div class="contTitle"></div>
+            <ul class="register">
+                <li>
+                    <div class="name"><em>*</em>邮件地址</div>
+                    <div class="regRight">
+                        <input type="text" class="input inputMd">
+                    </div>
+                </li>
+                <li>
+                    <div class="name"><em>*</em>密码</div>
+                    <div class="regRight">
+                        <input type="text" class="input">
+                        <div class="description">这里是描述文字</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="name"><em>*</em>确认密码</div>
+                    <div class="regRight"></div>
+                </li>
+                <li class="verification">
+                    <div class="name"><em>*</em>验证码</div>
+                    <div class="inputBox">
+                        <input type="text" class="input inputSm">
+                        <div class="description">请填写图片中的字符，不区分大小写</div>
+                    </div>
+                    <div class="verMain">
+                        <img src="images/163_10.png">
+                        <a href="#">看不清楚？换张图片</a>
+                    </div>
+                </li>
+                <li class="protocol">
+                    <input type="checkbox">
+                    <span>同意“隐私条款”和“隐私权相关政策”</span>
+                </li>
+            </ul>
+        </div>
+        <div class="contRight"></div>
+    </div>
+</div>
+
+</body>
+</html>

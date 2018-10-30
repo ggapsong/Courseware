@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            height:100px;
+            position: relative;
+            background: #8dd5f4;
+            z-index: 1;
+        }
+        .item2{
+            width:100px;
+            height:100px;
+            background: #f0a238;
+            position: absolute;
+            z-index: 9999999;
+        }
+        .item1{
+            width:100px;
+            height:100px;
+            background: #0c5460;
+            position: relative;
+        }
+
+        .item3{
+            width:100px;
+            height:100px;
+            background: #f00283;
+            position: fixed;
+            top:158px;
+            z-index: 2;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--
+    定位元素的层级都是一样的（后者覆盖前者）
+    如果需要调整定位元素的层级：  z-index:num;
+
+    一定注意要在同级元素身上去对比层级
+-->
+
+
+<div class="item1">1</div>
+<div class="box"><div class="item2">2</div></div>
+<div class="item3">3</div>
+
+</body>
+</html>

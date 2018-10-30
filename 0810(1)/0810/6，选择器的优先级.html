@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background: red !important;
+        }
+        .box.item2.item3.item5.item6.item7.item8.item9.item10.item11.item4{
+            background: yellow;
+        }
+        .box{
+            background: green;
+        }
+
+        #item{
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="box item2 item3 item4 item5 item6 item7 item8 item9 item10 item11" id="item"></div>  
+
+
+<!--
+    div{}    1      0,0,0,1
+    .box     10     0,0,1,0
+    #item{}  100    0,1,0,0
+    style    1000   1,0,0,0
+
+    !important；  加了important的css样式叫做严重声明，没有加的叫做普通声明。严重声明会比所有普通声明的特殊性都要高。这和选择器的特殊性已经没有关系了
+-->
+
+</body>
+</html>

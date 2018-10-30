@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style type="text/css">
+.box {
+	width: 302px;
+	height: 30px;
+	background: url(img/ico-mail.jpg) no-repeat;
+	border: 1px solid #000;
+}	
+.box input {
+	float: left;
+	width: 262px;
+	height: 30px;
+	padding: 0;
+	margin-left: 40px;
+	border:0;
+}
+/*
+	在IE6，7下，输入类型的表单控件，输入文字的时候，
+	背景图会随着文字一块移动
+	解决办法:
+		把背景图片给到父级！
+		设置背景图固定定位
+
+*/
+</style>
+</head>
+<body>
+<!--
+输入类型
+	input type = "text"
+	input type = "password"
+	textarea
+-->	
+<div class="box">
+	<input type="text">
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 400px;
+            border:1px solid #0c5460;
+            position: relative;
+        }
+        .main{
+            width: 300px;
+            height:120px;
+            background: #1fb24e;
+            position: absolute;
+            top:50%;
+            left:50%;
+            margin:-60px 0 0 -150px;
+        }
+    </style>
+</head>
+<body>
+
+<!--
+让一个未知宽高的元素上下左右都居中方法一：
+    1, 把元素转换成内联块元素
+    2，父级设置文字居中（此时元素已经左右居中了）
+    3，在父级中加入一个高度100%的内联块元素，宽度设为0（参考元素）
+    4，给要居中的元素和参考元素都设置vertical-align:middle;
+
+方法二：
+    1, 把元素转换成内联块元素
+    2，父级设置文字居中（此时元素已经左右居中了）
+    3，给父级设置一个和父级高度一行的行高
+    4，给要居中的元素设置vertical-align:middle;
+
+方法三：
+    1, 给要居中的元素设置绝对定位，并且上下左右方向的偏移值都给0，并且设置margin:auto;
+    2, 父级相对定位
+
+让一个已知宽高的元素上下左右都居中方法一：
+    1，父级相对定位，要居中的元素绝对定位
+    2，给要居中的元素设置left:50%,top:50%;
+    3, 给要居中的元素分别设置上方向和左方向的负margin值：自己宽高度的一半
+-->
+
+<div class="box">
+    <div class="main"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-5">
+            <ul class="nav nav-pills">
+                <li class="active"><a href="#a" data-toggle='tab'>first</a></li>
+                <li><a href="#b" data-toggle='tab'>second</a></li>
+                <li><a href="#c" data-toggle='tab'>third</a></li>
+                <li class="dropdown">
+                    <button type="button" data-toggle="dropdown" class="btn btn-default">下拉</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#d" data-toggle='tab'>fourth</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="a" class="tab-pane active">111</div>
+                <div id="b"  class="tab-pane">222</div>
+                <div id="c"  class="tab-pane">333</div>
+                <div id="d"  class="tab-pane">444</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>

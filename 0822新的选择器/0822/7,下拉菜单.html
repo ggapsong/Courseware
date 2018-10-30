@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .select{
+            width:140px;
+            height:30px;
+            border:1px solid #1b6d85;
+            position: relative;
+        }
+        .select:hover .list{
+            display: block;
+        }
+        .showBox{
+            height:100%;
+            line-height: 30px;
+        }
+        .showBox span{
+            float: left;
+            width:76%;
+            height: 100%;
+            background: #f1b0b7;
+            text-align: center;
+        }
+        .showBox em{
+            float: left;
+            width:24%;
+            height:100%;
+            background: #8dd5f4;
+            text-align: center;
+            color: #f00;
+        }
+        .showBox i{
+            font-size:20px;
+            color: transparent;
+            background: linear-gradient(red,yellow);
+            -webkit-background-clip:text;
+        }
+        .list{
+            margin:0;
+            padding: 0;
+            list-style: none;
+            position: absolute;
+            width:100%;
+            border:1px solid #1b6d85;
+            left: -1px;
+            display: none;
+        }
+        .list li{
+            font:14px/30px '微软雅黑';
+            text-indent: 14px;
+            border-bottom:1px solid #999;
+        }
+        .list li:hover{
+            background: #ddd;
+        }
+        .list .last{
+            border-bottom: none;
+        }
+    </style>
+    <link rel="stylesheet" href="css/iconfont.css">
+</head>
+<body>
+
+<div class="select">
+    <div class="showBox">
+        <span id="show">默认选项</span>
+        <em>
+            <i class="iconfont icon-arrowdown-copy"></i>
+        </em>
+    </div>
+    <ul class="list">
+        <li><i class="iconfont icon-set"></i>First</li>
+        <li><i class="iconfont icon-arrowdown-copy"></i>Second</li>
+        <li><i class="iconfont icon-zhuyishixiang"></i>Third</li>
+        <li class="last">Fourth</li>
+    </ul>
+</div>
+
+<script>
+
+    var show = document.querySelector('#show');
+    var list = document.querySelector('.list');
+    var li = document.querySelectorAll('.list li');
+    var showBox = document.querySelector('.showBox');
+
+    showBox.onmouseover = function(){
+        list.style.display = 'block';
+    }
+
+    Array.from(li).forEach((item)=>{
+        item.onclick = function(){
+            show.innerText = this.innerText;
+            list.style.display = 'none';
+        }
+    })
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+/*.clear{
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+
+.box{
+  width:500px;
+  height:300px;
+  border:1px solid #0c5460;
+  .clear;
+  .mian{
+    float: left;
+  }
+  ul{
+    float: right;
+  }
+}*/
+/*
+  先写好一个公用的类
+    这个公用的类可以在其他地方进行调用，调用得到的结果就是公用类里面的代码
+*/
+.box {
+  width: 500px;
+  height: 300px;
+  border: 1px solid #999;
+}
+.box .main {
+  width: 100px;
+  height: 100px;
+  border: 5px solid #999;
+}
+.box ul {
+  height: 200px;
+  border: 1px solid #f00;
+}

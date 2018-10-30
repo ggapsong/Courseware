@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--[if !IE]>
+    <style>
+        .box{
+            width:100px;
+            height:100px;
+            background-color: #fff2ab;
+        }
+    </style>
+    <![endif]-->
+    <!--[if IE]>
+        <style>
+            .box{
+                width:100px;
+                height:100px;
+                background-color: #00000a;
+            }
+        </style>
+    <![endif]-->
+</head>
+<body>
+
+<!--
+    1，条件注释只能用在IE9以及IE9以下的浏览器上
+    <!--[if IE]只有IE6,7,8,9浏览器显示<![endif]--
+
+    <!--[if gt IE 6]>IE6以上版本浏览器显示(不含IE6)<hr/><![endif]--
+
+    <!--[if lte IE 9]>IE9及IE9以下版本浏览器显示(包括IE9)<hr/><![endif]--
+
+    <!--[if IE 7]>只有IE7浏览器显示<![endif]--
+-->
+
+<div class="box">
+    <!--[if IE]只有IE6,7,8,9浏览器显示<![endif]--
+    <!--[if IE 7]>IE6以上版本浏览器显示(不含IE6)<![endif]-->
+</div>
+
+<!--
+    html5标签
+    IE6不支持png24
+    cssHack
+    条件注释
+-->
+</body>
+</html>

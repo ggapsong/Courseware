@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width:500px;
+            height:500px;
+            border: 1px solid #1b6d85;
+            margin:0;
+            padding:0;
+            list-style: none;
+        }
+        .box li:nth-child(8n+1){
+            background: #1b6d85;
+        }
+        .box li{
+            width: 71px;
+            height:71px;
+            float: left;
+            box-shadow: 1px 1px 0 1px #999;
+        }
+    </style>
+</head>
+<body>
+
+<ul class="box">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+    <li>31</li>
+    <li>32</li>
+    <li>33</li>
+    <li>34</li>
+    <li>35</li>
+    <li>36</li>
+    <li>37</li>
+    <li>38</li>
+    <li>39</li>
+    <li>40</li>
+    <li>41</li>
+    <li>42</li>
+    <li>43</li>
+    <li>44</li>
+    <li>45</li>
+    <li>46</li>
+    <li>47</li>
+    <li>48</li>
+    <li>49</li>
+</ul>
+
+<!--
+li*30>{$@}
+-->
+
+
+<!--
+    li:nth-child(4){}
+    E:nth-child(n)  表示E的父元素中的第n个子元素  第n个子元素必须是E
+    E:nth-child(odd){background:red}/*匹配奇数行*/
+    E:nth-child(even){background:red}/*匹配偶数行*/
+
+    E:nth-child(2n){background:red}
+
+-->
+
+</body>
+</html>

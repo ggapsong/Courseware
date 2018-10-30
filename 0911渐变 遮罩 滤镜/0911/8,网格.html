@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .box{
+            width:334px;
+            height:250px;
+            background: url("img/liehgt.png") no-repeat;
+            -webkit-mask: url(img/grid.png) no-repeat;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box" id="box"></div>
+
+<script>
+
+    box.onmousemove = function(ev){
+
+        var x = ev.clientX - 167;
+        var y = ev.clientY - 125;
+        box.style.backgroundPosition = x+'px '+y + 'px';
+
+    }
+
+    //ev  事件对象
+
+    /*
+        ev.clientX  事情发生的时候，鼠标所处的X位置
+        ev.clientY  事情发生的时候，鼠标所处的Y位置
+    */
+
+
+</script>
+
+</body>
+</html>

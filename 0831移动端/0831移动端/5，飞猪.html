@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var num = 1/window.devicePixelRatio;
+        document.write('<meta name="viewport" content="width=device-width, initial-scale='+ num +',maxmum-scale='+ num +',minmum-scale='+ num +',user-scalable=no">');
+        
+        var html = document.documentElement;
+        html.style.fontSize = html.clientWidth/25  + 'px';
+    </script>
+    <link href="css/feizhu.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="scanning"></div>
+        <div class="search"></div>
+        <div class="message"></div>
+    </header>
+
+    <img src="img/icon.png">
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style type="text/css">
+body {
+	margin: 0;
+}
+.box {
+	width: 563px;
+	border: 1px solid #000;
+	overflow: hidden;
+	/*padding-bottom: 20px;*/
+}
+.box div {
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin: 20px;
+	background: Red;
+	/**display: inline;*/
+	*zoom: 1;
+}
+/*
+	在IE6下，一行元素的宽度之和 与 父级的宽度相差超过2px，则最后一行元素的下margin失效
+	解决办法：打破出现的规则,改成inline元素
+*/
+</style>
+</head>
+<body>
+<div class="box">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+</div>	
+</body>
+</html>

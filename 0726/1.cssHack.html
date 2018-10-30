@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            *background-color: blue;
+            background-color: green\0;
+            background-color: black\9\0;
+        }
+    </style>
+</head>
+
+<!--
+.IE{
+
+color:#ff1;
+
+*color:#ff2; /识别/IE5,6,7
+
+_color:#ff5; //IE6识别
+
+color:#ff3\0; //IE8,9,10,11识别
+
+color:#ff4\9\0; //IE9,10识别
+
+}
+
+<!--[if IE]>只有IE6,7,8,9浏览器显示(IE10标准模式不支持)<![endif]-->
+<!--[if gt IE 6]>IE6以上版本浏览器显示(不含IE6)<hr/><![endif]-->
+<!--[if lte IE 9]>IE9及IE9以下版本浏览器显示(包括IE9)<hr/><![endif]-->
+
+
+<!--filter:progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=80); //IE6的写法
+
+-->
+
+<body>
+<div class="box">
+
+</div>
+<!--aosidjoasij-->
+</body>
+</html>

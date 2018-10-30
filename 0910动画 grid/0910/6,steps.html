@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width:88px;
+            height:54px;
+            background: url("img/54.png") no-repeat;
+            animation: move 0.2s steps(5) infinite;
+        }
+        @keyframes move {
+            0%{
+                background-position: 0 0;
+            }
+            100%{
+                background-position: right 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>

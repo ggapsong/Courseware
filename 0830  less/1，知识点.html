@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<link rel="stylesheet/less" href="css/style.less">-->
+    <!--<script src="js/less.min.js"></script>-->
+    <link rel="stylesheet" href="css/name.css">
+    <link rel="stylesheet" href="css/def.css">
+</head>
+<body>
+
+html5 css3 js  ECMAscript6
+
+<div class="box"></div>
+
+<!--
+    使用less
+        1,直接引入less.js
+            浏览器不认是less文件，所以需要less.js把less文件进行处理，然后再交给浏览器去运行
+            坏处：在客户端(浏览器)解析less,造成性能浪费，不利于维护
+
+        2, 使用koala编译器
+            http://koala-app.com/
+            坏处：每天上班需要多开一个软件
+
+        3，在编辑器中使用less插件直接编译
+            1，先安装nodejs   如果提示不是本地命令，那就找找环境变量的问题
+            2，是用npm 安装less(全局安装)  npm install less -g
+            3, 去编辑器里面配置
+                各种编辑器的配置方式你们自己看着办
+                sublime : https://www.cnblogs.com/alantao/p/6490863.html
+-->
+
+<!--
+
+    嵌套
+        .box{
+            width:100px;
+            .main{
+                height:200px;
+            }
+        }
+
+    作用域：变量可以发生作用的区域
+        变量的作用域就是包含这个变量声明的那个花括号
+
+    混合
+        将一个定义好的class A引入到另一个class B中，从而简单实现class B继承class A中的所有属性。
+        带参数混合（参数设置默认值）；  ____  style2.less ： 23
+        @arguments 变量；_______style2.less  ： 27
+        模式匹配  _____  style3.less ;
+
+    Math 函数
+		round(1.67); // `2`;  四舍五入
+		ceil(2.4);   // `3`;  向上取整
+		floor(2.6);  //`2`    向下取整
+
+	    命名空间
+	    注释   // --------- /*asidhi*/
+	    Importing —— @import "lib.less";
+	    避免编译 —— ~
+-->
+
+</body>
+</html>

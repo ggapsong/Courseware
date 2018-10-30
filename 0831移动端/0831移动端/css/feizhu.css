@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+img {
+  width: 10rem;
+  height: 6.66666667rem;
+}
+.header {
+  height: 2.93333333rem;
+  background: #ffcc01;
+}
+.header .scanning {
+  width: 3.6rem;
+  height: 2.93333333rem;
+  float: left;
+  background: #a97626;
+  background: url('../img/icon.png') no-repeat 0 -0.2rem;
+  background-size: 10rem 6.66666667rem;
+}
+.header .search {
+  width: 17.93333333rem;
+  height: 2.13333333rem;
+  background: #fff;
+  border-radius: 0.1rem;
+  padding-top: 0.4rem;
+  background-clip: content-box;
+  float: left;
+}
+.header .message {
+  width: 3.46666667rem;
+  height: 2.93333333rem;
+  float: left;
+  background: #a97626;
+  background: url('../img/icon.png') no-repeat -6.66666667rem -0.2rem;
+  background-size: 10rem 6.66666667rem;
+}

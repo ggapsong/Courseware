@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .list{
+            margin:0;
+            padding:0;
+            list-style: none;
+            width:385px;
+            background: #999;
+            overflow: hidden;
+            border-top:1px solid #55aaff;
+        }
+        .list li{
+            float: left;
+            width:54px;
+            height:45px;
+            border-right:1px solid #fff;
+            background: #dfdfdf;
+            background-clip: content-box;
+            /*border-bottom: 1px solid #c8cacc;*/
+            text-align: center;
+            margin-bottom: 1px;
+        }
+        .list li .num{
+            display: inline-block;
+            height:20px;
+            width:100%;
+            font:17px/20px '微软雅黑';
+            padding-top:5px;
+            vertical-align: top;
+        }
+        .list li .lunar{
+            display: inline-block;
+            height:18px;
+            font:12px/18px '微软雅黑';
+            vertical-align: top;
+        }
+        .list li[data-week]{
+            height:33px;
+            font: 14px/33px '微软雅黑';
+            text-align: center;
+        }
+        .list li[data-today]{
+            background: #ffbb00;
+            color: #fff;
+            background-clip: content-box;
+        }
+        .list li:hover{
+            box-shadow: inset 0 0 0 3px #ffbb00;
+        }
+        .list li[data-lastline]{
+            margin-bottom: 0;
+        }
+        .list li:nth-child(7n-1){
+            color: #f00;
+        }
+        .list li:nth-child(7n){
+            color: #f00;
+        }
+    </style>
+</head>
+<body>
+
+<ul class="list">
+    <li data-week>一</li>
+    <li data-week>二</li>
+    <li data-week>三</li>
+    <li data-week>四</li>
+    <li data-week>五</li>
+    <li data-week>六</li>
+    <li data-week>日</li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li data-today>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li data-lastline>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li data-lastline>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li data-lastline>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li data-lastline>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li data-lastline>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li data-lastline>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+    <li data-lastline>
+        <span class="num">12</span>
+        <span class="lunar">十二</span>
+    </li>
+</ul>
+
+</body>
+</html>

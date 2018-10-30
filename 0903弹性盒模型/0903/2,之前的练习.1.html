@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var num = 1/window.devicePixelRatio;
+        document.write('<meta name="viewport" content="width=device-width, initial-scale='+ num +',maxmum-scale='+ num +',minmum-scale='+ num +',user-scalable=no">');
+        
+        var html = document.documentElement;
+        html.style.fontSize = html.clientWidth/25  + 'px';
+    </script>
+    <link href="css/style1.css" rel="stylesheet">
+</head>
+<body>
+
+    <ul class="list">
+        <li>
+            <i class="info"></i>
+            <span>基本信息</span>
+        </li>
+        <li>
+            <i class="user"></i>
+            <span>个人信息</span>
+        </li>
+        <li>
+            <i class="vip"></i>
+            <span>vip信息</span>
+        </li>
+        <li>
+            <i class="order"></i>
+            <span>我的订单</span>
+        </li>
+        <li>
+            <i class="record"></i>
+            <span>视频激活记录</span>
+        </li>
+        <li>
+            <i class="device"></i>
+            <span>视频激活设备</span>
+        </li>
+        <li>
+            <i class="account"></i>
+            <span>绑定账号</span>
+        </li>
+        <li>
+            <i class="more"></i>
+        </li>
+    </ul>
+    
+</body>
+</html>

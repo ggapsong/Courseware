@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul{
+            margin:0;
+            padding: 0;
+            list-style: none;
+        }
+        .fl{
+            float: left;
+        }
+        .fr{
+            float: right;
+        }
+        .clear:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        em{
+            font-style: normal;
+        }
+        .box{
+            width:336px;
+        }
+        .header{
+            height: 30px;
+            margin-bottom: 12px;
+            border-left:5px solid #8bcc00;
+        }
+        .header .title{
+            float: left;
+        }
+        .header .title img{
+            float: left;
+            margin-left: 10px;
+        }
+        .header .type{
+            float: right;
+            font:12px/28px '宋体';
+            padding-top:2px;
+            padding-right:3px;
+            color: #d8d8d8;
+        }
+        .header .type span{
+            color: #0f820c;
+        }
+        .header .type .active{
+            color: #333333;
+            font-weight:bold;
+        }
+        .content li{
+            height:35px;
+            border-bottom: 1px dashed transparent;
+            font:14px/35px '宋体';
+            color: #515151;
+        }
+        .content .songName span{
+            color: #0f820c;
+        }
+        .content li:hover{
+            border-bottom: 1px dashed #646465;
+        }
+        .content li:hover .time{
+            display: none;
+        }
+        .content li:hover .tubiao{
+            display: block;
+        }
+        .content .tubiao{
+            padding-top:8px;
+            display: none;
+        }
+        .content .tubiao img{
+            float: left;
+            margin-left: 1px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <header class="header">
+        <div class="title">
+            <img src="images/liebiao_03.png">
+            <img src="images/liebiao_05.png">
+            <img src="images/liebiao_07.png">
+        </div>
+        <div class="type">
+            <span class="active">华语</span> |
+            <span>日韩</span> |
+            <span>欧美</span>
+        </div>
+    </header>
+    <ul class="content">
+        <li>
+            <div class="songName fl">
+                <span>纸短情长 (完整版)</span>
+                <em>- 烟把儿乐队</em>
+            </div>
+            <div class="time fr">2018-03-18</div>
+            <div class="tubiao fr">
+                <img src="images/liebiao_13.png">
+                <img src="images/liebiao_15.png">
+                <img src="images/liebiao_17.png">
+                <img src="images/liebiao_19.png">
+                <img src="images/liebiao_21.png">
+            </div>
+        </li>
+        <li>
+            <div class="songName fl">
+                <span>离人愁</span>
+                <em>- 李袁杰</em>
+            </div>
+            <div class="time fr">2018-03-18</div>
+            <div class="tubiao fr">
+                <img src="images/liebiao_13.png">
+                <img src="images/liebiao_15.png">
+                <img src="images/liebiao_17.png">
+                <img src="images/liebiao_19.png">
+                <img src="images/liebiao_21.png">
+            </div>
+        </li>
+        <li>
+            <div class="songName fl">
+                <span>你，好不好？</span>
+                <em>- 周兴哲</em>
+            </div>
+            <div class="time fr">2018-03-18</div>
+            <div class="tubiao fr">
+                <img src="images/liebiao_13.png">
+                <img src="images/liebiao_15.png">
+                <img src="images/liebiao_17.png">
+                <img src="images/liebiao_19.png">
+                <img src="images/liebiao_21.png">
+            </div>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

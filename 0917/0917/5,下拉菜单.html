@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+      .select{
+          width:140px;
+          height:30px;
+          border:1px solid #1b6d85;
+          position: relative;
+      }
+      /* .select:hover .list{
+          display: block;
+      } */
+      .showBox{
+          height:100%;
+          line-height: 30px;
+      }
+      .showBox span{
+          float: left;
+          width:76%;
+          height: 100%;
+          background: #f1b0b7;
+          text-align: center;
+      }
+      .showBox em{
+          float: left;
+          width:24%;
+          height:100%;
+          background: #8dd5f4;
+          text-align: center;
+          color: #f00;
+      }
+      .showBox i{
+          font-size:20px;
+          color: transparent;
+          background: linear-gradient(red,yellow);
+          -webkit-background-clip:text;
+      }
+      .list{
+          margin:0;
+          padding: 0;
+          list-style: none;
+          position: absolute;
+          width:100%;
+          border:1px solid #1b6d85;
+          left: -1px;
+          display: none;
+      }
+      .list li{
+          font:14px/30px '微软雅黑';
+          text-indent: 14px;
+          border-bottom:1px solid #999;
+      }
+      .list li:hover{
+          background: #ddd;
+      }
+      .list li:last-child{
+          border-bottom: none;
+      }
+  </style>
+</head>
+<body>
+
+  <div class="select">
+      <div class="showBox">
+          <span id="show">默认选项</span>
+          <em>
+              <i class="iconfont icon-arrowdown-copy"></i>
+          </em>
+      </div>
+      <ul class="list">
+          <li><i class="iconfont icon-set"></i>First</li>
+          <li><i class="iconfont icon-arrowdown-copy"></i>Second</li>
+          <li><i class="iconfont icon-zhuyishixiang"></i>Third</li>
+          <li>Fourth</li>
+      </ul>
+  </div>
+
+  <!-- <select>
+    <option value="">asdoj</option>
+    <option value="">asdoj</option>
+    <option value="">asdoj</option>
+    <option value="">asdoj</option>
+    <option value="">asdoj</option>
+  </select> -->
+
+<script>
+
+  /*
+  1，点击em让list显示出来
+  2，点击其他地方的时候，让list消失
+  3，点击list里面的某一项，用当前点击的这一项的内容替换span元素的内容
+  */
+
+var showBtn = document.querySelector('.showBox em');//小三角
+var list = document.querySelector('.list');//列表
+var item = list.querySelectorAll('li');//列表项
+var showBox = document.querySelector('#show');//默认显示的内容
+var selectBox = document.querySelector('.select');//最大父级
+
+showBtn.onclick = function(ev){
+  console.log(ev);
+  list.style.display = 'block';
+  ev.stopPropagation();
+}
+
+/*事件冒泡
+    当子级的事件被触发的时候，其所有祖先节点对应的事件都会被触发
+*/
+
+
+document.onclick = function(){
+  list.style.display = 'none';
+}
+
+/*item[0].onclick = function(){
+  showBox.innerText = this.innerText;
+}
+item[1].onclick = function(){
+  showBox.innerText = this.innerText;
+}
+item[2].onclick = function(){
+  showBox.innerText = this.innerText;
+}
+item[
+if(n<4){
+
+}].onclick = function(){
+  showBox.innerText = this.innerText;
+}*/
+
+var n = 0;
+
+abc(); //递归
+function abc(){
+  item[n].onclick = function(){
+    showBox.innerText = this.innerText;
+  }
+  n = n+1;
+  if(n<4){
+    abc();
+  }
+}
+
+</script>
+
+</body>
+</html>

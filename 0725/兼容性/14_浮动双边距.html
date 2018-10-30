@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style type="text/css">
+body {
+	margin: 0;
+}
+.box {
+	width: 100px;
+	height: 100px;
+	background: Red;
+	margin: 100px;
+	float: right;
+	display: inline;
+}
+/*
+	IE6下双边距BUG
+	在IE6下，块元素有浮动有横向的margin，横向的margin值会被放大成两倍
+	浮动方向与margin方向一致时，该方向会出现双倍边距
+	解决办法: display:inline;
+*/
+</style>
+</head>
+<body>
+<div class="box"></div>	
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            box-sizing: border-box;
+            width:100px;
+            height:100px;
+            padding:10px;
+            border:10px solid #1b6d85;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box"></div>
+<button class="box"></button>
+
+<!--
+    标准盒模型的可视宽度：
+        border + padding + content(width)
+        width：内容区域的宽度
+
+    怪异盒模型：
+        怪异盒模型的可视宽度取决于  width
+        width  =  border + padding + content
+
+    box-sizing 盒模型解析模式
+        Content-box  标准盒模型
+            width/height=content
+
+        Border-box 怪异盒模型
+            width/height=border+padding+content
+
+--->
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width:100px;
+            height:80px;
+            background: url("img/sprite_uc_android.png") no-repeat;
+            animation: back 0.2s steps(11) forwards;
+        }
+        .box:hover{
+            animation: move 0.2s steps(11) forwards;
+        }
+        @keyframes move {
+            0%{
+                background-position: 0 0;
+            }
+            100%{
+                background-position: right 0;
+            }
+        }
+        @keyframes back {
+            0%{
+                background-position: -1100px 0;
+            }
+            100%{
+                background-position: 0 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>

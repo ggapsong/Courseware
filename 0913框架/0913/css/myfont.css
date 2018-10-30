@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'myfont';
+    src: url('../myfont/myfont.eot');
+    src: url('../myfont/myfont.eot') format('embedded-opentype'),
+         url('../myfont/myfont.woff2') format('woff2'),
+         url('../myfont/myfont.woff') format('woff'),
+         url('../myfont/myfont.ttf') format('truetype'),
+         url('../myfont/myfont.svg#myfont') format('svg');
+}
+
+.myfont{
+    font-family: myfont;
+    font-style: normal;
+}
+
+.game::before{
+    content: 'C';
+}
+.micro::before{
+    content: 'D';
+}

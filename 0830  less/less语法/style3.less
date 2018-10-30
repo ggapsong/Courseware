@@ -1,0 +1,20 @@
+.border(top,@width:1px,@style:solid,@color:#999){
+  border-top:@width @style @color;
+}
+.border(right,@width:1px,@style:solid,@color:#999){
+  border-right:@width @style @color;
+}
+.border(bottom,@width:1px,@style:solid,@color:#999){
+  border-bottom:@width @style @color;
+}
+.border(left,@width:1px,@style:solid,@color:#999){
+  border-left:@width @style @color;
+}
+.border(@_,@width:1px,@style:solid,@color:#999){
+  width:20px;
+}
+
+.box{
+  .border(right,5px);
+  .border(bottom,5px);
+}

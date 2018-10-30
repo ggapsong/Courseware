@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul{
+            margin:0;
+            padding:0;
+            list-style: none;
+        }
+        .list li{
+            min-height: 43px;
+        }
+        .list li.height{
+            height: 45px;
+        }
+        .list li.height .name,.list li.height .option{
+            line-height: 45px;
+        }
+        .list li .name{
+            width:94px;
+            text-align: right;
+            float: left;
+            text-indent: 10px;
+            font:14px/43px '宋体';
+        }
+        .list .inpBox{
+            width:273px;
+            float: left;
+        }
+        .list li .input{
+            width: 214px;
+            height:27px;
+            border:1px solid #c9c9c9;
+            border-top:0;
+            border-left: 0;
+            box-shadow: inset 1px 1px 0 0 #494949;
+            padding:0 5px;
+            margin:10px 0 7px;
+            outline: none;
+        }
+        .list li .input:focus{
+            box-shadow: inset 1px 1px 0 0 #a5c760;
+            border-color: #a5c760;
+            background: #f9ffe6;
+        }
+        .list .option{
+            float: left;
+            font:12px/43px '宋体';
+            color: #0082cb;
+        }
+        .list .option em{
+            display: inline-block;
+            width: 1px;
+            height: 0;
+            border-width:5px 4px 0;
+            border-style:solid;
+            border-color: #6eafd5 transparent;
+            margin-left: 3px;
+        }
+    </style>
+</head>
+<body>
+
+<ul class="list">
+    <li class="height">
+        <div class="name">昵称：</div>
+        <div class="inpBox">
+            <input type="text" class="input">
+        </div>
+        <div class="option"><span>所有人可见</span><em></em></div>
+    </li>
+    <li class="height">
+        <div class="name">昵称：</div>
+        <div class="inpBox">
+            <input type="text" class="input">
+        </div>
+        <div class="option"><span>所有人可见</span><em></em></div>
+    </li>
+    <li class="height">
+        <div class="name">昵称：</div>
+        <div class="inpBox">
+            <input type="text" class="input">
+        </div>
+        <div class="option"><span>所有人可见</span><em></em></div>
+    </li>
+    <li class="height">
+        <div class="name">昵称：</div>
+        <div class="inpBox">
+            <input type="text" class="input">
+        </div>
+        <div class="option"><span>所有人可见</span><em></em></div>
+    </li>
+    <li class="height">
+        <div class="name">昵称：</div>
+        <div class="inpBox">
+            <input type="button" class="input">
+        </div>
+        <div class="option"><span>所有人可见</span><em></em></div>
+    </li>
+</ul>
+
+</body>
+</html>

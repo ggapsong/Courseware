@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=0.5"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>Document</title>
+    <script>
+        var num = 1/window.devicePixelRatio;
+        document.write('<meta name="viewport" content="width=device-width, initial-scale='+ num +',maxmum-scale='+ num +',minmum-scale='+ num +',user-scalable=no">');
+        
+        var html = document.documentElement;
+        html.style.fontSize = html.clientWidth/25  + 'px';
+
+        //1rem   = 30px;
+        //设计稿的宽度  /  fontSize的比例  = rem的值
+
+
+    </script>
+    <style>
+        @rem:30rem;
+        body{
+            margin: 0;
+        }
+        .box{
+            width: 6.2rem;
+            height: 6.2rem;
+            float: left;
+            background:#899;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+<!--
+    根据屏幕的宽度去计算font-size大小：
+        在做这件事情之前，我们需要拿到屏幕的正确的宽度
+        所有移动端浏览器在没有进行任何处理之前，用js去获取宽度得到的全部都是980px;
+        所以我们需要调整视口（也就是屏幕）
+-->
+    
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img{
+            vertical-align: top;
+        }
+        ul{
+            margin:0;
+            padding:0;
+            list-style: none;
+        }
+        .box{
+
+        }
+        .title{
+            font:8px '宋体';
+            height: 20px;
+            padding-bottom: 11px;
+        }
+        .title img{
+            vertical-align: bottom;
+        }
+        .content li{
+            width:148px;
+            height:180px;
+            float: left;
+            margin-right:12px;
+            position: relative;
+        }
+        .content li img{
+            width:100%;
+            height:100%;
+        }
+        .content li span{
+            position: absolute;
+            bottom:0;
+            font:12px/25px '宋体';
+            text-align: center;
+            color: #3c3c3c;
+            background: rgba(255,255,255,0.6);
+            width:100%;
+        }
+        .content .last{
+            width:180px;
+            margin-left: 20px;
+        }
+        .content .last i{
+            width: 10px;
+            height:12px;
+            position: absolute;
+            top:83px;
+            cursor: pointer;
+        }
+        .content .last i.prev{
+            background: url("images/street_23.png") no-repeat;
+            left:-17px;
+        }
+        .content .last i.next{
+            background: url("images/street_26.png") no-repeat;
+            right:-15px;
+        }
+    </style>
+</head>
+<body>
+
+<!--1、浮动和清楚浮动还不太会-->
+
+<div class="box">
+    <div class="title">
+        <img src="images/street_03.png">
+        <img src="images/street_06.png">
+    </div>
+    <ul class="content">
+        <li>
+            <img src="images/street_10.png">
+            <span>连衣裙</span>
+        </li>
+        <li>
+            <img src="images/street_12.png">
+            <span>连衣裙</span>
+        </li>
+        <li>
+            <img src="images/street_14.png">
+            <span>连衣裙</span>
+        </li>
+        <li>
+            <img src="images/street_16.png">
+            <span>连衣裙</span>
+        </li>
+        <li>
+            <img src="images/street_18.png">
+            <span>连衣裙</span>
+        </li>
+        <li class="last">
+            <i class="prev"></i>
+            <img src="images/street_20.png">
+            <span>连衣裙</span>
+            <i class="next"></i>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

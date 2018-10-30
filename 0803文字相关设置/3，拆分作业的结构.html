@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width:300px;
+            height:419px;
+            border-top:2px solid #206f96;
+        }
+        #title{
+            width: 298px;
+            height:29px;
+            border:1px solid #cfcfcf;
+            border-top:none;
+        }
+        #content{
+            height: 386px;
+            width:298px;
+            border:1px solid #cfcfcf;
+            border-top:none;
+        }
+        #email{
+            height:57px;
+            background-image: url("img/email.png");
+            background-repeat: no-repeat;
+            background-position: 16px 25px;
+        }
+        #mouse{
+            height:126px;
+            background: #c3c3c3 url("img/mouse.png") no-repeat  9px 51px;
+        }
+        #smile{
+            height:76px;
+            background:url("img/small.png") no-repeat 15px 25px;
+        }
+
+        #start{
+            height:127px;
+            background: #c3c3c3 url("img/start.png") no-repeat 12px 49px;
+        }
+    </style>
+</head>
+<body>
+
+<!--
+    先分行，再分列
+    注意内容的相关性
+
+    div box
+       div title
+       div content
+           div email
+           div mouse
+           div smile
+           div start
+
+碰到问题怎么办？
+    先检查 ——————  浏览器
+    先自己思考半个小时
+    问问身边的同学
+    找老师
+
+
+用通道抠透明的图片
+    1，用ps打开图片
+    2，打开图层面板 f7   (窗口 —— f7)
+    3，在图层面板的上面找到通道面板 并且点击打开
+    4，分别点击红，绿，蓝三个图层，观察哪个图层的颜色差异最大，就复制那个图层
+        复制图层：把图层拖到下面的文件的图标上面松手
+    5，通过操作色阶，以及填充颜色，把我们想要保留的部分和不需要的部分颜色差异最大化
+    6，如果图标是白色，其余部分是黑色，那么直接按住Ctrl 然后用鼠标点击图层（一定要点击缩略图的那个部分）
+    7，如果图标是黑色，其余部分是白色，那么应该先反相（Ctrl + I）.然后再执行第六步
+    8，点击选中了想要的图标之后，先点击rgb图层，然后再打开图层面板 直接复制，粘贴
+
+-->
+
+<div id="box">
+    <div id="title"></div>
+    <div id="content">
+        <div id="email"></div>
+        <div id="mouse"></div>
+        <div id="smile"></div>
+        <div id="start"></div>
+    </div>
+</div>
+
+</body>
+</html>

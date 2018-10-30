@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style type="text/css">
+	.box {
+		width: 200px;
+		height: 200px;
+		border: 1px solid #000;
+		position: relative;
+	}
+	.box .div {
+		float: left;
+		margin: 0 0 0 47px;
+		width: 150px;
+		height: 150px;
+		background: red;
+		*display: inline;
+	}
+	.box h1 {
+		position: absolute;
+		left: 10px;
+		top: 0;
+		width: 50px;
+		height: 50px;
+		background: yellow;
+	}
+	/*
+		在IE6下，当浮动元素和绝对定位元素，是同级关系的话(并且浮动元素的占位宽度和父级小于3px)，绝对定位元素会消失掉
+		解决办法:
+			把绝对定位元素单独包起来
+	*/
+</style>
+</head>
+<body>
+	<div class="box">
+		<div class="div"></div>
+		<h1></h1>
+	</div>
+</body>
+</html>

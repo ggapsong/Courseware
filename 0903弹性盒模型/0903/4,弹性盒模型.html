@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 500px;
+            border: 1px solid #000000;
+            display: flex;
+            flex-direction:row;
+            justify-content: space-around;
+            /* align-content:center; */
+            align-items: center;
+            /* flex-wrap: wrap; */
+        }
+        .box .item{
+            flex: 1;
+            height: 100px;
+            background: #9afeff;
+        }
+        .box .item:nth-child(1){
+            order: 2;
+            flex: 5;
+            background: #e15671;
+            /* align-self: flex-end; */
+        }
+        .box .item:nth-child(2){
+            order: 1;
+            /* align-self: flex-start; */
+        }
+    </style>
+</head>
+<body>
+    <!--
+        弹性盒模型： 基类display:flex;
+                            BFC block f c
+                            IFC
+                            FFC flex f c 
+                            GFC  grid f c
+
+            flex-direction 设置主轴方向（设置里面的元素如何排列，横向或者竖向）；
+                row 横向排列（默认方向） 里面的元素会从左到右排列
+                row-reverse 横向排列    里面的元素会从右到左排列
+                    reverse 反向
+                column   纵向排列       里面的元素会从上到下排列
+                column 纵向排列（反向）  里面的元素会从下到上排列
+
+            justify-content  设置元素在主轴上排列的位置
+                flex-start  元素在主轴上处于起始位置
+                flex-end    元素在主轴上处于结束位置
+                center      元素在主轴上处于居中位置
+                space-between 父级里面的富余空间自动平均分配在元素之间
+                space-around  父级里面的富余空间自动平均分配在元素两边
+
+            父级的宽度减去子集宽度之和  /  （子集的个数-1）
+
+
+            align-items:  设置侧轴对齐方式(针对单行)；
+                flex-start  元素在侧轴上处于起始位置
+                flex-end    元素在侧轴上处于结束位置
+                center      元素在侧轴上处于居中位置
+
+            align-content 设置侧轴对齐方式（针对多行）
+                flex-start  元素在侧轴上处于起始位置
+                flex-end    元素在侧轴上处于结束位置
+                center      元素在侧轴上处于居中位置
+                space-between 父级里面的富余空间自动平均分配在元素之间
+                space-around  父级里面的富余空间自动平均分配在元素两边
+
+            flex-flow
+                flex-flow 是 flex-direction 和 flex-wrap 的缩写
+                flex-flow: [flex-direction] [flex-wrap]
+
+
+        子级相关设置：
+            order  设置自身显示顺序，值越高，顺序越靠后;
+            如果order值是一样的，那么遵循原有的顺序
+
+            align-self 侧轴对齐(设置自身在父级中的侧轴对齐方式)
+                flex-start (默认) 元素在开始位置 富裕空间占据另一侧
+                flex-end 富裕空间在开始位置 元素占据另一侧
+                center 元素居中 富裕空间 平分左右两侧
+
+            flex:num;（设置自身的份数）
+            
+    box-shadow:[inset] x y blur [spread] color
+        参数
+            inset：投影方式
+                inset：内投影
+                不给：外投影
+            x、y：阴影偏移
+            blur：模糊半径
+            spread：扩展阴影半径
+                先扩展原有形状，再开始画阴影
+            color
+
+    -->
+
+    <div class="box">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+    </div>
+</body>
+</html>

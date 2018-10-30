@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="box"></div>
+  <input type="text">
+
+  <script>
+    var a = document.querySelector('.box');
+    var input = document.querySelector('input');
+    console.log(a);
+    a.style.width = '100px';
+    a.style.height = '100px';
+    a.style.background = 'red';
+    a.onmousemove = function(){
+      console.log(1);
+    }
+
+    input.onkeydown = function(ev){//当键盘按下的时候
+      console.log(ev.keyCode);
+    }
+    input.onchange = function(){//当失去焦点并且内容发生改变的时候
+      console.log(input.value);
+    }
+    input.oninput = function(){//当输入的时候
+      console.log(input.value);
+    }
+
+  </script>
+
+</body>
+</html>

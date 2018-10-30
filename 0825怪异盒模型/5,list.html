@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .list{
+            width: 80px;
+            margin:0;
+            padding:0;
+            list-style: none;
+        }
+        .list li{
+            height:30px;
+            border-bottom: 1px solid #ccc;
+            line-height:0;
+            color: #999;
+        }
+        em,i{
+            font-style: normal;
+            /*background: #f1b0b7;*/
+            line-height: 20px;
+            transition: 0.2s;
+        }
+        em,i,span{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        span{
+            font:12px/30px '微软雅黑';
+        }
+        i{
+            opacity: 0;
+            margin-left: 30px;
+        }
+        .list li:hover i{
+            opacity: 1;
+            margin-left: 0;
+        }
+        .list li:hover em{
+            margin-left: 6px;
+        }
+    </style>
+</head>
+<body>
+
+<ul class="list">
+    <li><em>></em><span>宅舞</span><i><</i></li>
+    <!--<li>三次元舞蹈</li>-->
+    <!--<li>舞蹈教程</li>-->
+</ul>
+
+</body>
+</html>

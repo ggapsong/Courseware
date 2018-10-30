@@ -1,0 +1,9 @@
+@import "globe.css";
+/*这里是头部的导航里面的搜索框的样式*/
+.bule .btn {
+  /*background: #00b6df;*/
+}
+.box {
+  /*background: #00b6df;*/
+  font: 1.2px / 2px '宋体';
+}

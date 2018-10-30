@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .menu{
+            width:144px;
+            height:274px;
+            border:1px solid #999999;
+        }
+        .content{
+            width: 138px;
+            height:274px;
+            background: #c0c0c0;
+            border-left:3px solid #c0c0c0;
+            border-right:3px solid #c0c0c0;
+        }
+        .item1{
+            height:57px;
+            border-bottom:1px solid #333333;
+            border-top: 2px solid #c0c0c0;
+        }
+        .item2{
+            height:97px;
+            border-top:1px solid #fefefe;
+            border-bottom:1px solid #333333;
+        }
+        .item3{
+            height:25px;
+            border-top:1px solid #fefefe;
+            border-bottom:1px solid #333333;
+        }
+        .item4{
+            height:43px;
+            border-top:1px solid #fefefe;
+            border-bottom:1px solid #333333;
+        }
+        .item5{
+            height:42px;
+            border-top:1px solid #fefefe;
+        }
+        .listItem{
+            font:12px/18px '宋体';
+            color: #000000;
+            text-indent: 16px;
+        }
+        .thumbnail,.array,.choose,.jump{
+            border-top:4px solid #c0c0c0;
+        }
+        .arrow{
+            background: url("images/menu_03.png") no-repeat right;
+        }
+        .right{
+            background: url("images/menu_06.png") no-repeat;
+        }
+        .dot{
+            background: url("images/menu_09.png") no-repeat;
+        }
+        .icon{
+            background-color: #3399fe;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<!--
+    结构：
+        menu
+            content
+                item
+                    tools
+                    status
+                    browser
+                item
+                    thumbnail
+                    repeat
+                    icon
+                    list
+                    detail
+                item
+                    array
+                item
+                    choose
+                    custom
+                item
+                    jump
+                    refresh
+
+
+/--------------- ps操作 -------------------/
+放大：用放大镜工具 : 在工具栏接近最底部的地方有一个放大镜图标
+    启用放大工具之后，顶部菜单栏会发生变化，有一个带加号的放大镜。。
+    启用放大镜之后，鼠标在图片上点击拖动就可以放大或者缩小图片了
+        往左边拖动是缩小，往右边拖动是放大
+
+    键盘按住Alt + 鼠标滚轮就可以放大缩小
+    Ctrl + "+"
+    Ctrl + "-"
+
+拖动： 抓手工具 快捷键：H
+测量： 矩形选框工具   M  框选之后，取消框选： Ctrl + D
+
+-->
+
+<div class="menu">
+    <div class="content">
+        <div class="item1">
+            <div class="listItem arrow">工具栏（T）</div>
+            <div class="listItem right">状态栏（B）</div>
+            <div class="listItem arrow">浏览器栏（E）</div>
+        </div>
+        <div class="item2">
+            <div class="listItem thumbnail dot">缩略图（H）</div>
+            <div class="listItem">平铺（S）</div>
+            <div class="listItem icon">图标（N）</div>
+            <div class="listItem">列表（L）</div>
+            <div class="listItem">详细信息（D）</div>
+        </div>
+        <div class="item3">
+            <div class="listItem array arrow">排列图标（I）</div>
+        </div>
+        <div class="item4">
+            <div class="listItem choose">选择详细信息（C）…</div>
+            <div class="listItem">自定义文件夹（F）…</div>
+        </div>
+        <div class="item5">
+            <div class="listItem jump arrow">转到（O）</div>
+            <div class="listItem">刷新（R）</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

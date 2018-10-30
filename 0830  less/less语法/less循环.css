@@ -1,0 +1,1556 @@
+.list {
+  margin: 0;
+  list-style: none;
+  width: 405px;
+  height: 410px;
+  border: 1px solid #0c5460;
+  padding-left: 5px;
+}
+.list li {
+  width: 130px;
+  height: 130px;
+  float: left;
+  margin: 5px 5px 0 0;
+  background: #f1b0b7;
+  display: inline-block;
+  background: url("../img/1.jpg") no-repeat;
+  background-size: 410px 410px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(5) {
+  background-position: -135px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(5) {
+  background-position: -135px -135px;
+}
+.list li:nth-child(6) {
+  background-position: -270px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(5) {
+  background-position: -135px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(5) {
+  background-position: -135px -135px;
+}
+.list li:nth-child(6) {
+  background-position: -270px -135px;
+}
+.list li:nth-child(7) {
+  background-position: 0px -270px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(5) {
+  background-position: -135px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(5) {
+  background-position: -135px -135px;
+}
+.list li:nth-child(6) {
+  background-position: -270px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(5) {
+  background-position: -135px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(5) {
+  background-position: -135px -135px;
+}
+.list li:nth-child(6) {
+  background-position: -270px -135px;
+}
+.list li:nth-child(7) {
+  background-position: 0px -270px;
+}
+.list li:nth-child(8) {
+  background-position: -135px -270px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(5) {
+  background-position: -135px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(5) {
+  background-position: -135px -135px;
+}
+.list li:nth-child(6) {
+  background-position: -270px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(5) {
+  background-position: -135px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(5) {
+  background-position: -135px -135px;
+}
+.list li:nth-child(6) {
+  background-position: -270px -135px;
+}
+.list li:nth-child(7) {
+  background-position: 0px -270px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(5) {
+  background-position: -135px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(5) {
+  background-position: -135px -135px;
+}
+.list li:nth-child(6) {
+  background-position: -270px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(5) {
+  background-position: -135px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.list li:nth-child(2) {
+  background-position: -135px 0px;
+}
+.list li:nth-child(3) {
+  background-position: -270px 0px;
+}
+.list li:nth-child(4) {
+  background-position: 0px -135px;
+}
+.list li:nth-child(5) {
+  background-position: -135px -135px;
+}
+.list li:nth-child(6) {
+  background-position: -270px -135px;
+}
+.list li:nth-child(7) {
+  background-position: 0px -270px;
+}
+.list li:nth-child(8) {
+  background-position: -135px -270px;
+}
+.list li:nth-child(9) {
+  background-position: -270px -270px;
+}
+/*
+  9-1 8/3 ==2 * -135 =
+  8-1 7/3 ==1
+      6/3 ==0
+*/

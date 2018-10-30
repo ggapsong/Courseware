@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            border:1px solid #1b6d85;
+            /*height:10px;*/
+            line-height: 50px;
+        }
+        #box2{
+            line-height:41px;
+            font-family: "宋体";
+            font-size:16px;
+            color: #e15671;
+            background: #ffdee4;
+        }
+
+
+        #box3{
+            border:1px solid #1b6d85;
+            /*font-size:30px;*/
+            /*font-family: '微软雅黑';*/
+            /*font-weight:100;*/
+            /*font-style: normal;*/
+            /*line-height: 40px;*/
+
+            font: italic bold 30px/40px '宋体';
+            color: #37fff3;
+        }
+    </style>
+</head>
+<body>
+
+<div id="box">
+    行高是个啥玩意儿
+</div>
+
+<div id="box2">
+    家装建材
+</div>
+
+<div id="box3">
+    文字在行高里面上下居中
+</div>
+
+<!--
+    文字在行高里面上下居中
+
+    测量行高：（行高尽量要比文字尺寸要大一些）
+        单行文字随意
+        多行文字之间的行高取决于两行文字之间的间距
+            如果是偶数，直接上下平分
+            如果是奇数，文字下面会多占用一个像素
+
+    font复合样式；
+        有两个值必须写：  font-size  font-family
+        前面两个值必须是 font-weight 和 font-style(它们两个值可以省略)
+        行高必须写在font-size的后面，用斜杠和font-size隔开
+-->
+
+</body>
+</html>

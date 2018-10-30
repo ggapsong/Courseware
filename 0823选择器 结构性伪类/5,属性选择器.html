@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div[title~="box"]{
+            background: #8dd5f4;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box" id="abc" title="box-num box" data-index="">asdas</div>
+<div class="box" id="abc" title="box" data-index="">2</div>
+<div class="box" id="abc" data-index="">3</div>
+<div class="box" id="abc" data-index="">4</div>
+<div class="box" id="abc" data-index="">5</div>
+<!--
+    data-  这是hTML5新增的自定义属性的写法
+    data-abc='value';
+
+div[title]  选择的是div里面带title属性的元素
+div[title="box"]  div里面带title属性，并且title属性的值是box的元素
+div[title~="box"] div里面带title属性，并且title属性的值包含box的元素
+    指定属性名，并且具有属性值，此属性值是一个词列表，并且以空格隔开，其中词列表中包含了一个value词，而且等号前面的“〜”不能不写
+
+div[title^="box"] div里面带title属性，并且title属性的值是以box开头的
+div[title$="box"] div里面带title属性，并且title属性的值是以box结束的
+div[title*="box"] div里面带title属性，并且title属性的值包含box的元素
+E[attr|="value"]指定了属性名，并且属性值是value或者以“value-”开头的值（比如说zh-cn）
+
+-->
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+!--
+JavaScript
+    JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。
+    它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，
+    最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。
+
+    Js的组成：
+        ECMAScript  一种由Ecma国际标准化的脚本程序设计语言
+                    ECMA：European Computer Manufacturers Association 欧洲计算机制造协会
+
+        文档对象模型（DOM）
+            Document Object Model
+
+        浏览器对象模型（BOM）
+            Browser Object Model
+
+js书写的位置：
+    1，行间
+        优点：直接
+        缺点：不方便复用、修改、维护、扩展
+    2，内嵌
+        script标签写在body底部（结束标签前面）
+    3，外联
+
+    学习js，是学习js提供的各种各样的功能
+    学习js，是利用js来操作页面上的元素
+    要操作元素，首先就要获取到元素
+
+-------------------------------------------
+
+获取元素：
+    通过id获取元素
+        getElementById()
+
+    通过tagname来获取元素
+        getElementsByTagName()
+        是一个集合（里面有多个元素）
+
+        下标代表一个集合中的位置
+        下标从0开始
+
+        第一个元素？
+        最后一个元素？
+        一共有多少个元素？
+
+
+
+    document 文档对象
+		操作页面中的元素，必然通过document对象来操作
+
+
+----------------------------------------
+
+调试js
+        控制台
+        alert 弹窗，警告，提示(弹出的信息有限)，还会中断程序运行
+        console.log
+        输出日志
+            console.log(信息)
+            console.dir(对象);
+                对象身上所有的属性都打出来
+
+    把获取的元素存在变量中，变量就代表了这个元素
+    通过变量多次使用元素
+
+
+    通过标签名获取
+    是一个集合（里面有多个元素）———————————集合的长度 length
+    获取集合中的某一个元素，通过下标（数字）
+    下标代表一个集合中的位置
+    下标从0开始
+
+
+属性操作
+    属性
+        属性就是人类对于一个对象的抽象方面的刻画
+
+    程序中
+        属性对元素的描述
+            width
+            height
+            background
+
+        操作属性的值
+
+    操作：读、写
+		属性读操作：获取、找到……
+			元素.属性名
+
+		属性写操作：修改、替换
+			元素.属性名 = 新的值
+
+    cssText 设置元素身上的行间样式
+    获取：element.attr
+    设置：element.attr = 'value';
+
+事件：鼠标、键盘、系统、自定义……
+
+	onmouseover
+	onmouseout
+	on mouse down
+	on mouse up
+	on mouse move	鼠标移动“抚摸”事件
+	on click
+	……
+
+	window.onload	加载完就执行
+	img.onload
+	body.onload
+
+函数： function(){}
+    有名字的函数可以多处调用
+    匿名函数可自执行
+
+
+
+
+if语句
+        if(条件){
+            // 条件成立就执行这里的代码
+        }
+
+        if(条件){
+            // 条件成立就执行这里的代码
+        }else{
+            // 条件不成立就执行这里的代码
+        }
+
+    布尔值 Boolean
+        成立或不成立
+        成立 true
+        不成立 false
+
+    通过比较运算符运算之后可以得到布尔值
+
+        ==  比较是否相等
+        >   比较大小
+        <   比较大小
+        ||  或者
+        &&  并且
+        ！  取反
+
+    if语句中条件，最终都会被转成布尔值
+    利用if条件来设置开关
+
+    判断条件是最重要的！！！
+
+		有些东西，不能做为判断条件：
+			1）相对路径
+				img src
+				href="1.html"
+				href="style.css"
+			2）颜色值
+				red	#ff0000	#f00	    rgb()
+			3）innerHTML 的值，也不要做判断
+
+	木有条件，创建条件也得上！！！
+--->
+
+<style>
+</style>
+<img src="">
+<script src=""></script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 500px;
+            height:300px;
+            border:1px solid #0c5460;
+            margin:100px;
+            position: relative;
+        }
+        .box2{
+            width: 500px;
+            height:300px;
+            border:1px solid #0c5460;
+            margin:100px;
+        }
+        .item1{
+            width:100%;
+            height:100px;
+            background: #f0a238;
+            position: absolute;
+            left:10px;
+            top:100px;
+        }
+        .item2{
+            width: 130px;
+            height:100px;
+            background: #8dd5f4;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <div class="item1">1</div>
+    <!--<div class="item2">2</div>-->
+</div>
+<div class="box2">
+</div>
+
+
+<!--
+    绝对定位：
+        如果没有给定位偏移量，那么绝对定位元素会在原来的位置保持不动
+        一旦给定位偏移量，那么它是相对于整个document来发生偏移的
+
+        绝对定位元素如果宽度给100%，那么它是相对于定位父级来计算的
+
+        1，完全脱离文档流的
+        2，让内联元素支持宽高
+        3，默认由内容来撑开宽度
+        4，如果有定位父级相对于定位父级发生偏移，没有定位父级相对于document发生偏移；
+        5，相对定位一般都是配合绝对定位来使用的
+        6，提升层级
+
+
+        定位父级：具有定位属性的父级
+
+
+-->
+
+</body>
+</html>

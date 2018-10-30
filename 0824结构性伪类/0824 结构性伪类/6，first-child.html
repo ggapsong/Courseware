@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div:first-of-type{
+            background: #1b6d85;
+        }
+        h3:not(*:nth-child(3)){
+            background: #8dd5f4;
+        }
+    </style>
+</head>
+<body>
+
+<section class="box">
+    <h3>1</h3>
+    <h3>2</h3>
+    <h3 class="abc">3</h3>
+    <h3>4</h3>
+    <h3>5</h3>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <header>
+        <div>head1</div>
+        <div>head2</div>
+        <div>head3</div>
+    </header>
+</section>
+
+<!--
+    E:first-child 表示E父元素中的第一个子节点，并且这个子节点必须是E
+    E:last-child 表示E父元素中的最后一个子节点，并且这个子节点必须是E
+
+    E:first-of-type 表示E父元素中的第一个E元素
+    E:last-of-type  表示E父元素中的最后一个E元素
+
+-->
+
+</body>
+</html>

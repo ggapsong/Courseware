@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .radio:checked{
+            width:100px;
+            height:100px;
+        }
+        input:disabled{
+            width:200px;
+            height:200px;
+            border: 1px solid #f00;
+        }
+        .inp:focus{
+            border:1px solid #f00;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+<input type="radio" class="radio">
+<input type="checkbox" disabled>
+<input type="text" class="inp">
+
+<!--
+
+    选择类型的输入框，如果想要让它默认被选中的话，就可以直接给它加上一个checked属性
+        标准写法: checked = 'checked';
+        省略写法: checked
+
+    伪类：
+    checked
+    disabled
+    focus
+
+
+    outline:输入元素被聚焦的时候，谷歌会给这个元素加一个蓝色的外边框
+        outline:none;
+-->
+
+</body>
+</html>

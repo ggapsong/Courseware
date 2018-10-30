@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #1b6d85;
+        }
+
+        .box > span{
+            color: #f00;
+        }
+
+        .box.active{
+            background: #f0a238;
+        }
+        div .active{
+            background: #00bbc2;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <span>sodfjsdoj</span>
+    <div class="text">
+        <span>asodjo</span>
+    </div>
+</div>
+
+<span>sdjoasij</span>
+
+<div class="box active">asda</div>
+<div>
+    <div class="active">asdoasij</div>
+</div>
+
+<!--
+    包含选择器：
+        .box span{}  在.box范围里面找span元素，span元素是.box的后代元素
+        .box > span{}  在.box范围里面找span元素，span元素是.box的子级
+
+        .box.active{}  选择一个class属性里面既有box 也有active的元素
+        div .active{}
+
+
+1,先用背景图片把所有的区块都写出来
+-->
+
+</body>
+</html>

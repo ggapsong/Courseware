@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+
+    <style>
+        .icon{
+            width:20px;
+            color: #f00;
+        }
+    </style>
+    <link rel="stylesheet" href="css/myfont.css">
+</head>
+<body>
+
+<div class="container clearfix">
+    <div class="dropdown pull-right open">
+        <button type="button" class="btn btn-danger" data-toggle="dropdown">
+            dropdown
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right">
+            <li><a href="#">first</a></li>
+            <li><a href="#">second</a></li>
+            <li><a href="#">third</a></li>
+            <li><a href="#">fourth</a></li>
+        </ul>
+    </div>
+    <div class="dropdown pull-left open">
+        <button type="button" class="btn btn-danger" data-toggle="dropdown">
+            dropdown
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#"><i class="glyphicon glyphicon-volume-down"></i>first</a></li>
+            <li><a href="#">
+                <em class="glyphicon glyphicon-edit"></em>seconsecondsecondsecondsecondsecondd</a></li>
+            <li><a href="#"><i class="iconfont icon-bijibendiannao"></i>third</a></li>
+            <li><a href="#"><i class="iconfont icon-daochu"></i>fourth</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="icon">
+    <svg aria-hidden="true" data-prefix="fab" data-icon="accusoft" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-accusoft fa-w-20 fa-2x"><path fill="currentColor" d="M482.2 372.1C476.5 365.2 250 75 242.3 65.5c-13.7-17.2 0-16.8 19.2-16.9 9.7-.1 106.3-.6 116.5-.6 24.1-.1 28.7.6 38.4 12.8 2.1 2.7 205.1 245.8 207.2 248.3 5.5 6.7 15.2 19.1 7.2 23.4-2.4 1.3-114.6 47.7-117.8 48.9-10.1 4-17.5 6.8-30.8-9.3m114.7-5.6s-115 50.4-117.5 51.6c-16 7.3-26.9-3.2-36.7-14.6l-57.1-74c-5.4-.9-60.4-9.6-65.3-9.3-3.1.2-9.6.8-14.4 2.9-4.9 2.1-145.2 52.8-150.2 54.7-5.1 2-11.4 3.6-11.1 7.6.2 2.5 2 2.6 4.6 3.5 2.7.8 300.9 67.6 308 69.1 15.6 3.3 38.5 10.5 53.6 1.7 2.1-1.2 123.8-76.4 125.8-77.8 5.4-4 4.3-6.8-1.7-8.2-2.3-.3-24.6-4.7-38-7.2m-326-181.3s-12 1.6-25 15.1c-9 9.3-242.1 239.1-243.4 240.9-7 10 1.6 6.8 15.7 1.7.8 0 114.5-36.6 114.5-36.6.5-.6-.1-.1.6-.6-.4-5.1-.8-26.2-1-27.7-.6-5.2 2.2-6.9 7-8.9l92.6-33.8c.6-.8 88.5-81.7 90.2-83.3v-1l-51.2-65.8" class=""></path></svg>
+</div>
+
+<div class="myfont">ABCD</div>
+
+
+
+
+<!--
+    dropdown
+        button  按钮身上必须带上自定义属性标识符，才能有js效果
+        list
+
+    iconFont使用步骤
+        先去http://www.iconfont.cn/home/index 找图标，找到之后，把想要的图标添加购物车
+        把所有的图标找齐之后，点击购物车添加至项目
+        然后去到项目中直接点击下载至本地
+
+        把文件中的字体文件以及css文件复制到你自己的项目中
+        把css文件中的font-face路径修改好
+        在页面中引入css
+        回到下载的文件里打开demo_fontclass.html文件。找到想要的图标的class名称，然后在自己的页面中引用就可以了
+        注意所有的图标都必须引入基类 iconfont
+-->
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

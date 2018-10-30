@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width:300px;
+            height: 300px;
+            background: radial-gradient(red,transparent 60%);
+            /*text-overflow: ellipsis;*/
+        }
+        .item{
+            margin:100px;
+            width:1px;
+            height:1px;
+            background: red;
+            border-radius: 50%;
+            box-shadow: 0 0 60px 50px red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box"></div>
+<div class="item"></div>
+
+<!--
+    在文档中，如果参数的后面带问号，那么代表这个参数是可选的
+
+    &&  并且
+    ||  或者
+    //  注释
+    ！  取反
+
+background
+    linear-gradient  线性渐变
+    第一个参数[可选]
+        <side or corner>?
+        case:
+            to left   从右到左
+            to right  从左到右
+            to top right  从左下角到右上角
+        angle
+        case:
+            45deg 两个颜色的交界线大约是45度；
+
+    后面的参数[两个或多个]
+        color <color-stop>？
+        case:
+            red
+            red 50%
+
+
+-->
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,body{
+            height: 100%;
+        }
+        body{
+            perspective:500px;
+        }
+        .box{
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            margin:auto;
+            width:500px;
+            height: 300px;
+            border:1px solid #0c5460;
+            transition: 1s;
+            transform-style:preserve-3d;
+        }
+        .box:hover{
+            transform:rotateY(70deg);
+        }
+        img{
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            margin:auto;
+            transition: 1s;
+            transform:translateZ(200px);
+        }
+    </style>
+</head>
+<body>
+
+<div class="box"><img src="img/bunny.jpg" class="img"></div>
+
+
+</body>
+</html>

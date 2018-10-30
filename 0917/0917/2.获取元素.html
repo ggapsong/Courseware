@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 100px;
+      height: 100px;
+      background: #899;
+    }
+    #item{}
+      div{
+        border: 1px solid black;
+      }
+  </style>
+</head>
+<body>
+
+  <div class="box active" id="item" data-element='javascript'>
+    <span>aosdjao</span>
+  </div>
+  <div data-element='javascript'></div>
+  <div data-element='javascript'></div>
+  <div data-element='javascript'></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <script>
+      console.log(document.getElementById('item'));
+      document.getElementById('item').style.height='200px';
+      document.getElementById('item').style.backgroundColor='red';
+
+      console.log(document.getElementsByTagName('div'));
+      document.getElementsByTagName('div')[0].style.height = '20px';
+      document.getElementsByTagName('div')[1].style.height = '20px';
+      document.getElementsByTagName('div')[2].style.height = '20px';
+      document.getElementsByTagName('div')[3].style.height = '20px';
+      document.getElementsByTagName('div')[4].style.height = '20px';
+      // console.log(document.getElementsByTagName('div').length);
+
+      console.dir(document.querySelector('[data-element]'));
+      // console.log(document.querySelectorAll('.box'));
+  </script>
+
+!--
+  调试js  还是利用检查工具（控制台）
+
+  通过js操作一个元素的css样式
+    element.style.cssAttr = 'value';
+      element  js获取到的元素
+      style  css样式（固定）
+      cssAttr  css属性 ： width,height,background,border.....
+      value  css属性的值 10px
+
+  document.getElementsByTagName 通过标签名称获取（一组）元素
+    获取到的永远是一组元素，就算这一组元素里面只有一个
+
+最新选择元素的方法：
+  document.querySelector('css 选择器');
+    通过css选择器来选择元素，css能选中的元素，这个方法就能选中
+    获取到的（永远）是一个元素
+    如果传入的css选择器能选中多个元素，那么这个方法获取到的是第一个元素
+  document.querySelectorAll('css 选择器');
+    获取到的（永远）是多个元素
+
+  这两个方法其他浏览器几乎全都支持
+  IE6,7废掉了
+  IE8只支持所有css2.1的选择器以及部分css3选择器
+-->
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            margin:0;
+            list-style: none;
+            padding:0;
+            width: 500px;
+            border:1px solid #1b6d85;
+        }
+        .box li{
+            height: 30px;
+        }
+        .box input{
+            float: left;
+            width: 200px;
+        }
+        .box input:only-child{
+            margin-left: 20px;
+        }
+        .box span{
+            display: inline-block;
+            width: 20px;
+            height:30px;
+            line-height: 30px;
+            text-align: center;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+<ul class="box">
+    <li>
+        <span>*</span>
+        <input type="text">
+    </li>
+    <li>
+        <span>*</span>
+        <input type="text">
+    </li>
+    <li>
+        <span>*</span>
+        <input type="text">
+    </li>
+    <li>
+        <span>*</span>
+        <input type="text">
+    </li>
+    <li>
+        <span>*</span>
+        <input type="text">
+    </li>
+</ul>
+
+<!--
+    E:only-child表示E父元素中只有一个子节点。注意：子节点不包含文本节点
+    E:only-of-type 表示E的父元素中只有一个子节点，且这个唯一的子节点的类型必须是E。注意：子节点不包含文本节点
+
+-->
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            height:300px;
+            border:1px solid #1b6d85;
+        }
+        span{
+            background: #1b6d85;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <span>First</span>
+    <span>Second</span>
+    <span>Third</span>
+    <span>Fourth</span>
+</div>
+
+<!--
+    css样式继承：子级会继承父级除盒模型相关的样式之外的绝大部分样式
+
+    解决空格问题：
+        1，利用宋体 宋体在字体大小小于20px的情况下，空格大小就是文字大小的一半
+        2，简单粗暴，直接给父级font-size:0; 这时候需要重新指定子级的font-size
+-->
+
+</body>
+</html>

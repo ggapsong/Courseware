@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width:500px;
+            border:1px solid #1b6d85;
+        }
+        .box::first-line{
+            background: #8dd5f4;
+            color: #fff;
+            /*font-size: 30px;*/
+        }
+        .box::first-letter{
+            color: #f00;
+            font-size:30px;
+        }
+        .box:before{
+            content: '这里是before';
+        }
+        .box::selection{
+            background: #f1b0b7;
+            color: #fff;
+        }
+
+        button{
+            border:1px solid #1b6d85;
+            padding:0;
+            outline: none;
+        }
+        button:focus{
+
+            background: #f1b0b7;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    Advanced element selection using selectors including: [foo^="bar"], [foo$="bar"], [foo*="bar"], :root, :nth-child(), :nth-last-child(), :nth-of-type(), :nth-last-of-type(), :last-child, :first-of-type, :last-of-type, :only-child, :only-of-type, :empty, :target, :enabled, :disabled, :checked, :not(), ~ (general sibling)
+</div>
+
+<button>aoaso</button>
+<button>aoaso</button>
+<button>aoaso</button>
+<button>aoaso</button>
+<button>aoaso</button>
+<button>aoaso</button>
+
+<!--
+    E:first-line 表示E元素中的第一行文字
+    E:first-letter 表示E元素中的第一个字符
+    E::selection表示E元素在用户选中文字时的那些文字
+    E::before 生成内容在E元素前
+
+
+    伪元素和伪类的关系：
+        伪元素是真实存在的虚拟节点
+            伪元素是在css3提出来的  在css2的时代没有伪元素，全部都是伪类，所以在css2阶段就已经存在的伪元素也可以只写一个冒号
+            但是伪元素标准的写法是两个冒号 ：：
+
+        伪类可以看做是一个元素的状态
+            一个冒号：
+-->
+
+</body>
+</html>

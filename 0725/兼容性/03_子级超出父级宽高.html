@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#box {
+			width: 300px;
+			height: 300px;
+			border: 10px solid #000;
+		}
+		#div {
+			width: 500px;
+			height: 500px;
+			padding: 60px;
+			margin: 55px;
+			background: red;
+		}
+		/*
+			占位宽 = content + padding + border + margin;
+
+			在IE6下，子元素宽高超出父级的宽高，可以把父级设置好的宽高撑开.
+			解决办法：严格把控子级宽高，使其不超过父级宽高
+		*/
+	</style>
+</head>
+<body>
+<div id="box">
+	<div id="div"></div>
+</div>
+</body>
+</html>

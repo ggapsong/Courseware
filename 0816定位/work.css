@@ -1,0 +1,92 @@
+ul,body{
+	padding:0;
+	margin:0;
+}
+li{
+	list-style: none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+img{
+	vertical-align: top;
+	border: none;
+}
+.section{
+	padding: 20px;
+	width: 881px;
+}
+.box{
+	width: 864px;
+	border:1px solid #e8e8e8;
+	padding: 0px 0 17px 15px;
+}
+.box .title{
+	margin-bottom: 10px;
+	margin-left: -15px;
+	margin-top: -1px;
+}
+.box .title span{
+	float: left;
+	font:13px/39px "微软雅黑";
+	color:#3c3c3c;
+	padding:0 16px 0 15px;
+}
+.box .title .border{
+	width: 1px;
+	height: 22px;
+	background-color: #e8e8e8;
+	padding: 0;
+	margin-top: 10px;
+}
+.box .title .life{
+	border-top: 2px solid #ff4400;
+}
+.title .no-border{
+	border-right:none;
+}
+.content .shop_item{
+	float: left;
+	width: 170px;
+	margin-right: 10px;
+	margin-right: 10px;
+}
+.content .shop_item .pic{
+	position: relative;
+	margin-bottom: 13px;
+}
+.content .shop_item .pic span{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(255,255,255,0.5);
+	font: 12px/28px "微软雅黑";
+	text-align: center;
+}
+.content .shop_item .texts span{
+	float: left;
+	font: 12px/30px "微软雅黑";
+	margin-right: 9px;
+}
+.content .shop_item .texts .no{
+	margin: 0;
+}
+.content .shop_item .texts .red{
+	color: #ff5a1e;
+}
+.content .shop_item .texts .strong{
+	font-weight: bold;
+	margin-right: 12px;
+}
+.bottom_ad{
+	padding-top: 12px;
+}

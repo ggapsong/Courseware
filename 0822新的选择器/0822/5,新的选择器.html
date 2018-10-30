@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width:500px;
+            border: 1px solid #1b6d85;
+            height:300px;
+        }
+        span{
+            display: inline-block;
+            width: 20px;
+            height:20px;
+            border:2px solid #1b6d85;
+            border-radius: 50%;
+        }
+        input{
+            /*display: none;*/
+        }
+       /* input:checked+span{
+            background: #f1b0b7;
+        }*/
+        input:checked~span{
+            background: #f1b0b7;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <input type="radio" name="abc">
+    <em></em>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+
+
+
+<!--
+    .box span  .box里面的span元素  span元素是box的子级
+    .box+span  .box后面的span元素  span元素是box的同级
+
+    +  相邻元素选择器
+    E+F  选择E元素后面的（一个）F元素而且中间不能有其他元素隔开
+
+    ~  毗邻元素选择器
+    E~F  选择E元素后面的所有F元素  中间可以有其他元素隔开
+
+    这两个选择器  E和F必须是同级元素  并且 F一定要在E的后面
+-->
+
+</body>
+</html>

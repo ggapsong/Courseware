@@ -1,0 +1,45 @@
+@rem:30rem;
+
+body{
+    margin: 0;
+}
+
+img{
+    width: 300/@rem;
+    height: 200/@rem;
+}
+
+.header{
+    height: 88/@rem;
+    background: #ffcc01;
+
+    .backImg(@x:0,@y:0){
+        background: url('../img/icon.png') no-repeat @x @y;
+        background-size: 300/@rem 200/@rem;
+    }
+
+    .scanning{
+        width: 108/@rem;
+        height: 88/@rem;
+        float: left;
+        background: #a97626;
+        .backImg(@x:0,@y:-6/@rem);
+    }
+    .search{
+        width: 538/@rem;
+        height: 64/@rem;
+        background: #fff;
+        border-radius: 3/@rem;
+        padding-top:12/@rem;
+        background-clip: content-box; 
+        float: left;
+    }
+    .message{
+        width: 104/@rem;
+        height: 88/@rem;
+        float: left;
+        background: #a97626;
+        .backImg(@x:-200/@rem,@y:-6/@rem);
+    }
+}
+

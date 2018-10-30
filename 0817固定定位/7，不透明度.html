@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background: #8dd5f4;
+        }
+        .box{
+            width:500px;
+            height:300px;
+            background:url("images/bunny.jpg") no-repeat;
+            background-size: cover;
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom: 0;
+            margin:auto;
+            box-shadow: 3px 3px 10px 0 rgba(0,0,0,0.4);
+            font-size:50px;
+            opacity:0.8;
+        }
+        .main{
+            width:100px;
+            height:100px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    这里是登录框
+    <div class="main"></div>
+</div>
+
+<!--
+    opacity: 让整个元素以及元素的子元素全部变成半透明
+        问题：IE低版本浏览器不支持透明
+        解决方法： filter:alpha(opacity=0~100);
+
+
+    rgba();  它只是让颜色变成半透明（不会被继承）
+-->
+
+</body>
+</html>

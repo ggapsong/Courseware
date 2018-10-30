@@ -1,0 +1,49 @@
+/*.clear{
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+
+.box{
+  width:500px;
+  height:300px;
+  border:1px solid #0c5460;
+  .clear;
+  .mian{
+    float: left;
+  }
+  ul{
+    float: right;
+  }
+}*/
+
+.boder(@width:1px,@style:solid,@color:#999){
+  border:@width @style @color;
+}
+
+.boder(@width:1px,@style:solid,@color:#999){
+  border:@arguments;
+}
+
+/*
+  先写好一个公用的类
+    这个公用的类可以在其他地方进行调用，调用得到的结果就是公用类里面的代码
+*/
+
+.box{
+  width:500px;
+  height:300px;
+  .boder();
+  .main{
+    width:100px;
+    height:100px;
+    .boder(5px);
+  }
+  ul{
+    height:200px;
+    .boder(@color:#f00);
+  }
+}

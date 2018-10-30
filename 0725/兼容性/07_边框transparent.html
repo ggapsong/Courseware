@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style type="text/css">
+	.box {
+		width: 0;
+		height: 0;
+		overflow: hidden;
+		border: 50px solid transparent;
+		border-top: 50px solid red;
+	}
+	/*
+		在IE6下给边框加transparent的时候，border-style最好设置成虚线(dashed)
+		经过实测，虚线、点线都可以
+	*/
+</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>

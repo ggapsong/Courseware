@@ -1,0 +1,73 @@
+@rem:30rem;
+
+body{
+    margin: 0;
+}
+
+.list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 750/@rem;
+    height: 376/@rem;
+    border-top: 2/@rem solid #27547c;
+    li{
+        width: 186/@rem;
+        height: 186/@rem;
+        border-right:  2/@rem solid #27547c;
+        border-bottom:  2/@rem solid #27547c;
+        float: left;
+        text-align: center;
+        &:nth-child(4n){
+            border-right: 0;
+        }
+        &:active{
+            background-color: #e1e1e1;
+        }
+        i{
+            width: 60/@rem;
+            height: 60/@rem;
+            display: inline-block;
+            margin-top: 40/@rem;
+            background-color: #27547c;
+            
+
+            .backgimg(@x:0,@y:0){
+                background: url(../img/icon.png) no-repeat @x @y;
+                background-size: 300/@rem 120/@rem;
+            }
+
+            &.info{
+                .backgimg();
+            }
+            &.user{
+                .backgimg(-60/@rem,0);
+            }
+            &.vip{
+                background-position: -120/@rem 0;
+            }
+            &.order{
+                background-position: -180/@rem 0;
+            }
+            &.record{
+                background-position: -240/@rem 0;
+            }
+            &.device{
+                background-position: 0 -60/@rem;
+            }
+            &.account{
+                background-position: -60/@rem -60/@rem;
+            }
+            &.more{
+                margin-top: 64/@rem;
+                background-position: -120/@rem -60/@rem;
+            }
+        }
+        span{
+            display: inline-block;
+            width: 100%;
+            font: 100 26/@rem~'/'57/@rem '微软雅黑';
+            color: #738797;
+        }
+    }
+}

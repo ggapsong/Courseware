@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 140px;
+            background: #8dd5f4;
+            margin:0;
+            padding:0;
+            list-style: none;
+        }
+        .box li{
+            height:30px;
+            border-bottom: 1px solid #1b6d85;
+            font:14px/30px '微软雅黑';
+            white-space: nowrap;
+        }
+        .box li:hover{
+            background: #5f8ea2;
+        }
+        .box li span {
+            display: inline-block;
+            text-indent: 20px;
+            width: 100%;
+            vertical-align: top;
+        }
+        .box li:hover .subMenu{
+            display: inline-block;
+        }
+        .box .subMenu{
+            width: 60px;
+            text-indent:0;
+            white-space: normal;
+            background: #f0a238;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<ul class="box">
+    <li>
+        <span>查看</span>
+        <span class="subMenu">
+            大图标
+            中等图标
+            小图标
+        </span>
+    </li>
+    <li><span>排列方式</span></li>
+    <li><span>刷新</span></li>
+</ul>
+
+</body>
+</html>

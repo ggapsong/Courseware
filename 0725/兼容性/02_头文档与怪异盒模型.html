@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style type="text/css">
+#box {
+	width: 200px;
+	height: 200px;
+	padding: 50px;
+	border: 20px solid #000;
+	/* chrome 260 * 260 */
+	/* ie6 200 * 200 */
+}
+#div {
+	height: 100px;
+	background: red;
+	/* chrome 200 * 100 */
+	/* ie6 140 * 100 */
+}
+/*
+标准盒模型:
+	width/height = content;
+	可视宽/高 =  content + padding + border;
+
+在老版本IE下，不设置文档声明，页面就会陷入怪异盒模型解析
+
+怪异盒模型
+	width/height = 可视宽/高;
+	content = width - padding - border; 
+
+*/
+</style>
+</head>
+<body>
+	<div id="box">
+		<div id="div"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,202 @@
+body{
+    margin:0;
+}
+.box{
+    width:642px;
+    margin:0 auto;
+}
+.list{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.list li{
+    height: 64px;
+}
+.list li.title{
+    height:44px;
+    margin:61px 0 48px;
+    background-clip: content-box;
+    border:1px solid #1b6d85;
+    font:18px/44px '微软雅黑';
+    color:#66a8ff;
+    text-align: center;
+}
+.list li.title span{
+    float: left;
+    width:50%;
+    height:100%;
+}
+li.title span.active{
+    background: #66a8ff;
+    color: #fff;
+}
+
+.list li .inputUp{
+    height: 34px;
+}
+.list li .inputDown{
+    height: 30px;
+    padding-left:120px;
+    color: #e15671;
+}
+.list li .inputDown span{
+    height:100%;
+    display: inline-block;
+    font:12px/30px '微软雅黑';
+    vertical-align: middle;
+}
+.list li .inputDown i{
+    color: #d5060d;
+    font-size:20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.inputUp .star{
+    float: left;
+    width: 77px;
+    text-align: right;
+    padding-right: 20px;
+    color: #e15671;
+    line-height: 34px;
+}
+.inputUp .inputBox{
+    float: left;
+    height:32px;
+    width: 480px;
+    border:1px solid #999;
+}
+.inputUp .success{
+    float: left;
+    padding-left:4px;
+    height:100%;
+    line-height:34px;
+    color: #46c45b;
+}
+
+.inputUp .inputBox .icon{
+    width:38px;
+    height:24px;
+    border-right:1px solid #999;
+    margin:5px 0 3px;
+    float: left;
+    text-align: center;
+    color: #b8b8b8;
+}
+.inputUp .inputBox .icon i{
+    font-size:30px;
+    line-height: 24px;
+}
+.inputUp .inputBox .input{
+    width:299px;
+    height: 24px;
+    border:0;
+    padding:0;
+    outline: none;
+    float: left;
+    margin:5px 0 3px;
+    padding-left:9px;
+    background: none;
+}
+.inputUp .inputBox input::-webkit-input-placeholder{
+    color:#d8dbe2;
+}
+
+.inputUp .inputBox .select{
+    width: 131px;
+    height:100%;
+    float: right;
+    border-left:1px solid #999;
+    background: #ededed;
+    font:14px/32px '微软雅黑';
+}
+.inputUp .inputBox .select span{
+    width:107px;
+    color: #626262;
+    text-align: center;
+    float: left;
+}
+.inputUp .inputBox .select i{
+    font-size:24px;
+    color: #cacaca;
+}
+
+
+.inputUp .inputBox .getCode{
+    width: 131px;
+    height:100%;
+    float: right;
+    color: #626262;
+    text-align: center;
+    border-left:1px solid #999;
+    background: #ededed;
+    font:14px/32px '微软雅黑';
+}
+
+.list li.sex{
+    height: 21px;
+    padding-left:97px;
+}
+
+.list li.sex input {
+    display: none;
+}
+
+.list li.sex input:checked~i{
+    width:13px;
+    height:13px;
+    padding:2px;
+    background: #666;
+    background-clip: content-box;
+}
+
+.list li.sex i{
+    display: inline-block;
+    width:17px;
+    height:17px;
+    border:1px solid #666;
+    border-radius: 50%;
+    margin:1px;
+    vertical-align: top;
+}
+.list li.sex span{
+    vertical-align: top;
+    display: inline-block;
+    padding:0 6px;
+}
+
+.list li.sex label{
+    margin-right:90px;
+}
+
+.list li.protocol{
+    height:17px;
+    margin-top:31px;
+    padding-left:97px;
+}
+
+.list li.protocol input {
+    display: none;
+}
+
+.list li.protocol input:checked~i{
+    background: url("../img/checked.png") no-repeat;
+}
+
+.list li.line{
+    margin-top:21px;
+    width: 734px;
+    border-top:1px dashed #0c0e0f;
+    margin-left:-46px;
+}
+
+.list li.protocol i{
+    width:17px;
+    height:17px;
+    display: inline-block;
+    background: url("../img/checkbox.png") no-repeat;
+}
+.list li.protocol span{
+    padding-left:9px;
+}

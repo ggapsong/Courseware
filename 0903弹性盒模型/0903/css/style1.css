@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+}
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 25rem;
+  height: 12.46666667rem;
+  border-top: 0.06666667rem solid #27547c;
+  border-bottom: 0.06666667rem solid #27547c;
+  background: #27547c;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+.list li {
+  width: 6.2rem;
+  height: 6.2rem;
+  text-align: center;
+  background: #fff;
+}
+.list li:active {
+  background-color: #e1e1e1;
+}
+.list li i {
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  margin-top: 1.33333333rem;
+  background: url(../img/icon.png) no-repeat;
+  background-size: 10rem 4rem;
+}
+.list li i.info {
+  background-position: 0 0;
+}
+.list li i.user {
+  background-position: -2rem 0;
+}
+.list li i.vip {
+  background-position: -4rem 0;
+}
+.list li i.order {
+  background-position: -6rem 0;
+}
+.list li i.record {
+  background-position: -8rem 0;
+}
+.list li i.device {
+  background-position: 0 -2rem;
+}
+.list li i.account {
+  background-position: -2rem -2rem;
+}
+.list li i.more {
+  margin-top: 2.13333333rem;
+  background-position: -4rem -2rem;
+}
+.list li span {
+  display: inline-block;
+  width: 100%;
+  font: 100 26/30rem / 57/30rem '微软雅黑';
+  color: #738797;
+}

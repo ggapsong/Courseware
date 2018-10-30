@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img{
+            vertical-align: top;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .box{
+            font-size: 0;
+            color: #3c3c3c;
+        }
+        .item{
+            width: 444px;
+            height: 258px;
+            border: 1px solid #666;
+            display: inline-block;
+            margin-right: -1px;
+            vertical-align: top;
+        }
+        .item .itemTitle{
+            height: 20px;
+            border-left: 2px solid #f00;
+            margin: 15px 0 0 -1px;
+            padding: 2px 0 0 12px;
+            font:bold 14px/20px '微软雅黑';
+        }
+        .item .goodsList{
+            width: 422px;
+            height: 96px;
+            border-bottom: 1px solid #666;
+            margin-left: 15px;
+            font-size: 0;
+            padding-top: 16px;
+        }
+        .item .goodsType{
+            margin-left: 15px;
+            padding-top: 7px;
+            word-spacing: 26px;
+        }
+        .goodsType li{
+            width: 198px;
+            display: inline-block;
+            font: 12px/30px '宋体';
+            word-spacing: 0;
+        }
+        .goodsType strong{
+            padding-right: 3px;
+        }
+        .goodsType .red{
+            color: #f00;
+        }
+        .item .goodsItem{
+            width: 198px;
+            height: 100%;
+            display: inline-block;
+        }
+        .item .goodsItem.left{
+            margin-right: 26px;
+        }
+        .item .text{
+            width: 92px;
+            padding-left: 6px;
+            padding-top: 4px;
+            display: inline-block;
+            font: 12px/24px '宋体';
+            color: #3c3c3c;
+        }
+        .item .text strong{
+            display: inline-block;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item">
+            <div class="itemTitle">
+                <span>户外运动</span>
+                <img src="images/goods_03.png">
+            </div>
+            <div class="goodsList">
+                <div class="goodsItem left">
+                    <img src="images/goods_10.png">
+                    <span class="text">
+                        1212火爆预售！独家发售！<strong>新潮过年好礼！</strong>
+                    </span>
+                </div>
+                <div class="goodsItem">
+                    <img src="images/goods_10.png">
+                    <span class="text">
+                        1212火爆预售！独家发售！<strong>新潮过年好礼！</strong>
+                    </span>
+                </div>
+            </div>
+            <ul class="goodsType">
+                <li>
+                    <strong>运动潮鞋</strong>
+                    <span>跑步鞋</span>
+                    <span class="red">板鞋</span>
+                    <span>限量版</span>
+                </li>
+                <li>
+                    <strong>运动潮鞋</strong>
+                    <span>跑步鞋</span>
+                    <span class="red">板鞋</span>
+                    <span>限量版</span>
+                </li>
+                <li>
+                    <strong>运动潮鞋</strong>
+                    <span>跑步鞋</span>
+                    <span class="red">板鞋</span>
+                    <span>限量版</span>
+                </li>
+                <li>
+                    <strong>运动潮鞋</strong>
+                    <span>跑步鞋</span>
+                    <span class="red">板鞋</span>
+                    <span>限量版</span>
+                </li>
+                <li>
+                    <strong>运动潮鞋</strong>
+                    <span>跑步鞋</span>
+                    <span class="red">板鞋</span>
+                    <span>限量版</span>
+                </li>
+                <li>
+                    <strong>运动潮鞋</strong>
+                    <span>跑步鞋</span>
+                    <span class="red">板鞋</span>
+                    <span>限量版</span>
+                </li>
+            </ul>
+        </div>
+        <div class="item">
+            <div class="itemTitle">
+                <span>珠宝配饰</span>
+            </div>
+        </div>
+    </div>
+
+    <!--
+        display: inline-block;  如果你想让你的元素横着排，并且还要能支持宽高，那么就应该把它转换成内联块元素；
+
+        把元素转换成内联块元素
+            让内联元素支持宽高
+            让块元素在一行显示
+            支持所有css命令
+            宽度默认由内容撑开
+
+        内联块元素代码换行的时候会解析成空格
+        IE6、7下，不支持把块元素转换成内联块元素
+
+        H  抓手工具
+        M  框选工具
+        V  移动工具
+        C  裁剪/切片工具
+        I  吸管工具  吸颜色
+        T  文字工具
+    -->
+</body>
+</html>

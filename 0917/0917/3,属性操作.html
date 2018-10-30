@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    label{
+      width: 200px;
+      height: 40px;
+      border: 1px solid #666;
+      display: block;
+      position: relative;
+    }
+    .input{
+      border: none;
+      padding:0;
+      height: 40px;
+      width:195px;
+      outline:none;
+      padding-left: 5px;
+    }
+    span{
+      width: 30px;
+      height: 40px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: #899;
+    }
+  </style>
+</head>
+<body>
+
+<input type="text">
+<label>
+  <input type="password" class="input">
+  <span></span>
+</label>
+
+<script>
+document.querySelector('.input');
+document.querySelector('span').onmousedown = function(){
+  console.log(1);
+  document.querySelector('.input').type = 'text';
+}
+document.querySelector('span').onmouseup = function(){
+  document.querySelector('.input').type = 'password';
+  console.log(document.querySelector('.input').value);
+  console.log(document.querySelector('.input').type);
+}
+
+
+</script>
+
+!--
+  事件：永远都存在
+    onclick   当点击的时候
+    onmouseup  当鼠标抬起（松开）
+    onmousedown 当鼠标点下去
+    onmouseover 当鼠标移入到某个元素身上的时候
+    onmouseout  当鼠标从某个元素身上移开的时候
+
+    onkeydown
+
+  属性操作：
+    获取：element.attr
+    设置：element.attr = 'value';
+-->
+
+</body>
+</html>

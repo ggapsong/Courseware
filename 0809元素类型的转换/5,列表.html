@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            /*background-color: #ccc;*/
+        }
+        ul{
+            margin:0;
+            padding:0;
+            list-style: none;
+        }
+        .title{
+            width:266px;
+            height:38px;
+            background:url('img/tit_bg.png') no-repeat;
+            font:18px/33px '微软雅黑';
+            color: #fff;
+            text-indent: 24px;
+        }
+        .text{
+            background: url("img/text.png") no-repeat 79px 16px;
+            padding-right: 98px;
+        }
+        .content{
+            width:254px;
+            height:265px;
+            border:1px solid #505050;
+            border-top:0;
+            margin:-5px 0 0 5px;
+        }
+        .main{
+            width:252px;
+            height:259px;
+            border:1px solid #fff;
+            border-top:0;
+            background-color: #cccccc;
+            padding-top:5px;
+        }
+        .list{
+            width:214px;
+            background: #8dd5f4;
+            margin:0 auto;
+        }
+        li{
+            padding-top:7px;
+            font:12px/26px '宋体';
+            color: #959595;
+            text-indent: 14px;
+            border-bottom: 1px dotted #000000;
+        }
+        .arrowBox{
+            vertical-align: top;
+            padding-top:10px;
+            line-height: 20px;
+        }
+        .arrow{
+            vertical-align: middle;
+            line-height:0;
+            font-size:0;
+            border-width:2px 3px;
+            border-style: solid;
+            border-color: transparent transparent transparent #ff0000;
+        }
+    </style>
+</head>
+<body>
+
+<!--
+    内联元素的上下对齐方式： 基线对齐（底部对齐）
+-->
+
+<div class="box">
+    <div class="title">
+        <span class="text">设计知识</span>
+    </div>
+    <div class="content">
+        <div class="main">
+            <ul class="list">
+                <li>
+                    <span class="arrowBox">
+                        <span class="arrow"></span>
+                    </span>
+                    给公园美女加上淡淡的蓝黄色
+                </li>
+                <li>给树林婚片加上清爽的淡橙色</li>
+                <li>给偏暗的海景人物加上甜美的淡蓝色</li>
+                <li>简单虚化荷花图片背景突出主体</li>
+                <li>给外景儿童加上柔美的淡暖色</li>
+                <li>打造柔美的橙黄色秋季外景图片</li>
+                <li>自制漂亮的Lomo图片调色动作</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

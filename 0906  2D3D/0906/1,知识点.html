@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+1、再讲一遍script
+2、总结一下写页面时候移动端和pc端的区别，有哪些注意事项
+1、可否总结一下所学过的所有伪类用法
+
+:hover
+active
+link
+visited
+
+after,before
+
+checked
+disabled
+focuse
+
+:first-child
+nth-child
+nth-of-type
+only-child
+
+first-line
+first-letter
+selection
+
+
+弹性盒模型：
+display:flex;
+flex-wrap:
+    nowrap
+    wrap
+
+justify-content  设置主轴对齐方式
+    flex-start
+    end
+    center
+    space-between
+    space-around
+
+align-items
+    flex-start
+    end
+    center
+
+    子级相关的样式
+        order
+        flex
+        align-self
+
+
+Transition过渡
+    transition-property  要过渡的属性  (all || [attr] || none);
+    transition-duration 过渡时间
+    transition-delay 延迟时间
+    transition-timing-function 运动形式
+        ease：（逐渐变慢）默认值
+        linear：（匀速）
+        ease-in：(加速)
+        ease-out：（减速）
+        ease-in-out：（先加速后减速）
+        cubic-bezier 贝塞尔曲线（ x1, y1, x2, y2 ）
+        http://cubic-bezier.com/
+
+    transition:width 1s 3s ease-in,height 2s 1s;用复合样式写多个属性的过渡
+
+transform 2D变换
+    rotate(90deg)  旋转函数 取值度数
+        deg  度数
+    Transform-origin:x y 旋转的基点
+    skew(90deg) 倾斜函数 取值度数
+        skewX()
+        skewY()
+    scale(2) 缩放函数 取值 正数、负数和小数
+        scaleX()
+        scaleY()
+    translate() 位移函数
+        translateX()
+        translateY()
+
+3D变换
+    perspective 景深(近大远小) – 父级
+    perspective-origin 景深基点
+    transform-style自身在进行3D变换的同时，保留其子元素的3D变换
+        preserve-3d
+    transform 新增函数
+        rotateZ()
+        translateZ()
+
+
+</body>
+</html>

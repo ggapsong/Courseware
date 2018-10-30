@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        form{
+            /*background: #8dd5f4;*/
+        }
+    </style>
+</head>
+<body>
+
+<form action="http://www.miaov.com" method="">
+    <label>用户名：</label><input type="text" value="abc"><br>
+    <span>密 码：</span><input type="password"><br>
+    <span>邮 箱：</span><input type="email"><br>
+    <span>电 话：</span><input type="tel"><br>
+    <span>性 别：</span>
+    <input type="radio" name="sex"><span>男</span>
+    <input type="radio" name="sex"><span>女</span>
+    <input type="radio" name="sex"><span>保密</span>
+    <input type="radio" name="sex"><span>未知</span><br>
+
+    <input type="checkbox"><span>同意“隐私条款”，卖身契</span><br>
+    <input type="submit"><br>
+    <input type="reset"><br>
+    <input type="button" id="user" value="登录"><br>
+</form>
+
+<!--
+    form    表单（用来包含所有的表单元素）
+        action：  属性。里面写入数据提交的地址
+        method:   属性。数据提交的方式
+
+    input   输入元素
+        type:  决定当前的这个输入元素是什么类型的
+           text      文本框
+           password  密码
+           radio     单选框
+           checkbox  复选框
+
+           submit    提交
+           reset     重置
+           button    自定义按钮  需要手动写入value才能显示文字
+
+        name :  决定当前元素的数据的名称（后端得根据名称去读取数据）字段
+            如果要提交这个输入元素的数据，就必须要写name值
+
+            user/userName   前端和后端一定要统一
+
+       value:
+              输入元素的里面的值
+              我们可以去设置这个默认值，或者改变按钮上的文字
+
+       注意：
+        一组单选按钮，必须加入相同的name值才会有单选效果
+-->
+
+<script>
+    user.onclick = function(){
+        console.log(user.value);
+    }
+</script>
+
+</body>
+</html>

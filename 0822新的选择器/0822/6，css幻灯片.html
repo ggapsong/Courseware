@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 300px;
+            height:140px;
+            border: 1px solid #1b6d85;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .box input{
+            position: relative;
+            top:116px;
+            z-index: 1;
+        }
+        .list{
+            margin:0;
+            padding:0;
+            list-style: none;
+            position: absolute;
+            width:1500px;
+            top:0;
+            left:0;
+            transition: 0.5s;
+        }
+        .list li{
+            float: left;
+        }
+        .item1:checked~.list{
+            left:0;
+        }
+        .item2:checked~.list{
+            left:-300px;
+        }
+        .item3:checked~.list{
+            left:-600px;
+        }
+        .item4:checked~.list{
+            left:-900px;
+        }
+        .item5:checked~.list{
+            left:-1200px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <input type="radio" class="item1" name="slide" checked>
+    <input type="radio" class="item2" name="slide">
+    <input type="radio" class="item3" name="slide">
+    <input type="radio" class="item4" name="slide">
+    <input type="radio" class="item5" name="slide">
+    <ul class="list">
+        <li><img src="img/1.png"></li>
+        <li><img src="img/2.png"></li>
+        <li><img src="img/3.png"></li>
+        <li><img src="img/4.png"></li>
+        <li><img src="img/5.png"></li>
+    </ul>
+</div>
+
+</body>
+</html>

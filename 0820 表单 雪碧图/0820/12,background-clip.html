@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width:100px;
+            height: 100px;
+            border:10px solid transparent;
+            box-shadow: 0 0 5px 0 rgba(0,0,0,0.8);
+            padding:20px;
+            background:#f1b0b7 url("img/58.jpg") no-repeat -300px;
+            /*background-origin: border-box;*/
+            background-clip:content-box;
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size:100px;
+            font-weight:bold;
+        }
+
+        .box2{
+            width:60px;
+            height:60px;
+            background: #f0a238;
+            background-clip: content-box;
+            padding:14px;
+            border:10px solid #f0a238;
+            border-radius: 50%;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">背景图片</div>
+
+<div class="box2"></div>
+<!--
+    背景颜色：在所有区域都会显示
+    背景图片：默认的起始点——padding区域的左上角(默认所有区域都会显示背景图片)
+
+    -webkit-  :谷歌浏览器内核前缀
+        有一些新的css属性，被提出来了，但是标准还没有发布，但是浏览器厂商为了让开发者提前体验到这条样式，所以自己实现了这条样式，但是为了不和标准的命名相冲突，所以加上浏览器内核前缀
+    -moz-   火狐内核前缀
+    -ms-    IE内核前缀
+    -o-     opera( 欧朋浏览器内核前缀 )
+-->
+
+</body>
+</html>

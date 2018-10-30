@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .box{
+            background: #1b6d85;
+            /*border:1px solid #1b6d85;*/
+            padding:1px;
+        }
+        .content{
+            width:100px;
+            height:100px;
+            background: #f00283;
+            margin-left:20px;
+            margin-top:100px;
+            margin-bottom:1000px;
+        }
+    </style>
+</head>
+<body>
+
+<!--
+    margin问题：当两个同级元素之间存在margin值，这个margin值会叠压，这时候它们之间的间距取决于数值比较大的那个margin值
+    父子级包含的时候子级的margin-top，bottom会传递给父级；
+        解决方法：
+            1，给父级加边框
+            2，给父级加padding
+
+    当一个标签，我们没有指定它的宽度的时候，那么它的宽度会撑满一整行
+-->
+<div class="box">
+    <div class="content"></div>
+</div>
+
+</body>
+</html>

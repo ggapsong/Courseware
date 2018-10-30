@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width:400px;
+            height:200px;
+            border:5px solid #0c5460;
+            overflow: hidden;
+            /*margin:300px 1000px;*/
+        }
+        .list:hover{
+            animation-play-state:paused;
+        }
+        .list{
+            margin:0;
+            padding:0;
+            list-style: none;
+            width:2400px;
+            display: flex;
+            animation: move 5s infinite;
+        }
+
+        @keyframes move {
+            0%{
+                transform: translateX(0);
+            }
+            2%{
+                transform: translateX(0);
+            }
+            20%{
+                transform: translateX(0);
+            }
+            22%{
+                transform: translateX(-400px);
+            }
+            40%{
+                transform: translateX(-400px);
+            }
+            42%{
+                transform: translateX(-800px);
+            }
+            60%{
+                transform: translateX(-800px);
+            }
+            62%{
+                transform: translateX(-1200px);
+            }
+            80%{
+                transform: translateX(-1200px);
+            }
+            82%{
+                transform: translateX(-1600px);
+            }
+            98%{
+                transform: translateX(-1600px);
+            }
+            100%{
+                transform: translateX(-2000px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <ul class="list">
+        <li><img src="img/1.png"></li>
+        <li><img src="img/2.png"></li>
+        <li><img src="img/3.png"></li>
+        <li><img src="img/4.png"></li>
+        <li><img src="img/5.png"></li>
+        <li><img src="img/1.png"></li>
+    </ul>
+</div>
+
+</body>
+</html>

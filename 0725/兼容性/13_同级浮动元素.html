@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style type="text/css">
+	.clearfix{
+		*zoom:1;
+	}
+	.clearfix:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.box {
+		border: 1px solid red;
+	}
+	.left {
+		float: left;
+		width: 100px;
+		height: 100px;
+		background: #ccc;
+	}
+	.right{
+		float: right;
+		width: 100px;
+		height: 100px;
+		background: #ccc;
+	}
+	/*
+		同级有浮动元素,最好所有同级元素都浮动
+	*/
+</style>
+</head>
+<body>
+<div class="box clearfix">
+	<div class="left">左侧</div>
+	<div class="right">右侧</div>
+</div>	
+</body>
+</html>

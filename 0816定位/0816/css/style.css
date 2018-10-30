@@ -1,0 +1,188 @@
+body{
+    margin:0;
+    background: url("../img/bg.png");
+}
+dl,dd{
+    margin:0;
+}
+img{
+    vertical-align: top;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.box{
+    width:951px;
+    margin:7px auto;
+}
+.box .leftMenu{
+    width:210px;
+    height:720px;
+    background: #f3edcf;
+}
+.box .rightContent{
+    width:660px;
+    height:707px;
+    background: #fff;
+    padding:13px 30px 0;
+}
+.leftMenu .userInfo{
+    height:233px;
+    border-bottom: 1px solid #decf87;
+    text-align: center;
+}
+
+.leftMenu .userInfo .header{
+    width:120px;
+    height:120px;
+    border:3px solid #fff;
+    border-radius: 50%;
+    margin:33px auto 0;
+    overflow: hidden;
+    box-shadow: 2px 3px 5px 0 #c9bf8b;
+}
+.userInfo .header img {
+    width: 120px;
+    height: 120px;
+}
+.userInfo .userName{
+    height:16px;
+    font:14px/16px '微软雅黑';
+    color: #2b2921;
+    margin:8px 0 10px;
+    text-align: center;
+}
+.userInfo .time{
+    height:21px;
+    background: #fff;
+    border-radius: 11px;
+    padding:0 11px;
+    font:12px/21px '微软雅黑';
+    color: #f6644b;
+    display: inline-block;
+}
+
+.leftMenu .list{
+    border-top:1px solid #f6f2de;
+    border-bottom:1px solid #decf87;
+    font:14px/30px '微软雅黑';
+    color: #464646;
+    padding:7px 0 9px;
+}
+.leftMenu .list.last{
+    border-bottom:none;
+}
+.leftMenu .list dt{
+    color: #f6644b;
+    height:30px;
+    padding-left:55px;
+}
+
+.leftMenu .list dt.data{
+    background: url("../images/user_25.png") no-repeat 25px 1px;
+}
+.leftMenu .list dt.dynamic{
+    background: url("../images/user_34.png") no-repeat 25px 1px;
+}
+.leftMenu .list dt.safe{
+    background: url("../images/user_38.png") no-repeat 25px 1px;
+}
+
+.leftMenu .list dd{
+    padding-left:55px;
+}
+.leftMenu .list dd:hover{
+    height:36px;
+    margin:-3px 0 -3px;
+    color: #fff;
+    line-height: 36px;
+    background: url("../images/user_31.png") repeat-x;
+}
+
+
+.rightContent .title{
+    height:30px;
+    font:14px/30px '微软雅黑';
+    color: #464646;
+}
+.rightContent .title .titleLeft{
+    float: left;
+    padding-left:23px;
+}
+.rightContent .title .btn{
+    height:21px;
+    background: #f6644b;
+    border-radius: 11px;
+    font:12px/21px '微软雅黑';
+    color: #fff;
+    padding:0 10px;
+    float: right;
+    cursor: pointer;
+}
+.rightContent .title .titleLeft.notice{
+    background: url("../images/user_03.png") no-repeat 0 7px;
+}
+.rightContent .title .titleLeft.business{
+    background: url("../images/user_10.png") no-repeat 0 7px;
+}
+.rightContent .noticeParent{
+    height: 51px;
+}
+.rightContent .noticeBox{
+    border:5px solid #ccc;
+    border-radius: 5px;
+}
+.rightContent .noticeBox .main{
+    width:632px;
+    height: 29px;
+    float: left;
+    border-top:3px solid #7d0000;
+    background: #f6644b url("../images/user_07.png") repeat-x bottom;
+    padding:0 9px;
+}
+
+.rightContent .listBox{
+    border:1px solid #666;
+    border-bottom: 0;
+    margin:1px 0 16px;
+}
+.rightContent .listBox dt{
+    height:32px;
+    border-bottom:1px solid #ccc;
+    background: #eaeaea;
+    line-height: 32px;
+    color:#a7a7a7;
+    font-size:12px;
+}
+.rightContent .listBox dd{
+    height:49px;
+    border-bottom: 1px solid #969696;
+    line-height:49px;
+}
+.rightContent .listBox dt .busName{
+    text-indent: 122px;
+}
+.rightContent .listBox .busName{
+    width:390px;
+    float: left;
+    text-indent: 10px;
+}
+.rightContent .listBox .date{
+    width:120px;
+    margin-left: 26px;
+    text-align: center;
+    float: left;
+}
+.rightContent .listBox .func{
+    width:40px;
+    float: right;
+    margin-right: 15px;
+    text-align: center;
+    font-size:0;
+}
+.rightContent .listBox .func img{
+    margin-top:15px;
+}

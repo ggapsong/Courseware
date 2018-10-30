@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width:50px;
+            /*border: 1px solid #1b6d85;*/
+            height:30px;
+            /*display: inline-block;*/
+        }
+        span{
+            display: inline-block;
+            width: 20px;
+            height:20px;
+            border:2px solid #1b6d85;
+            border-radius: 50%;
+        }
+        input{
+            display: none;
+        }
+        input:checked+span{
+            background: #f1b0b7;
+        }
+    </style>
+</head>
+<body>
+
+<label class="box">
+    <input type="radio" name="abc">
+    <span></span>
+</label>
+<label class="box">
+    <input type="radio" name="abc">
+    <span></span>
+</label>
+<label class="box">
+    <input type="radio" name="abc">
+    <span></span>
+</label>
+<label class="box">
+    <input type="radio" name="abc">
+    <span></span>
+</label>
+
+
+
+<!--
+    .box span  .box里面的span元素  span元素是box的子级
+    .box+span  .box后面的span元素  span元素是box的同级
+-->
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width:100px;
+            height:100px;
+            background: #0c5460;
+            animation-name:move;
+            animation-duration:1s;
+            animation-delay: 1s;
+            animation-timing-function:linear;
+            /*animation-iteration-count:infinite;*/
+            /*animation-direction:alternate;*/
+            animation-fill-mode:both;
+        }
+        .box:hover{
+            animation-play-state:paused;
+        }
+
+
+        @keyframes move {
+            0%{
+                width:300px;
+            }
+            100%{
+                width:500px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="box"></div>
+
+<!--
+    animation-fill-mode:forwards;设置播放时间之外的状态
+        forwards 动画执行完毕之后，停留在最后一帧的状态
+        backwards
+            正常的动画： 如果有延时，先延时，然后渲染第一帧，然后执行动画
+        指定backwards之后： 如果有延时，则先渲染第一帧，然后延时，然后执行动画
+        both:动画执行之前，先渲染第一帧，然后延时，然后执行动画。动画执行完毕之后，会保留最后一帧的状态
+-->
+
+</body>
+</html>

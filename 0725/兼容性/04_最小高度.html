@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#box {
+			width: 100px;
+			height: 1px;
+			background: red;
+			overflow: hidden;
+		}
+		/*
+			在IE6下，块属性元素的高度小于19px的时候，高度会按照19px来处理.
+			解决办法：overflow:hidden;
+		*/
+	</style>
+</head>
+<body>
+	<div id="box"></div>
+</body>
+</html>
