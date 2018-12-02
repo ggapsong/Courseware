@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="user">
+    <input type="submit">
+    <script>
+        let user = document.querySelector("#user");
+        user.onblur = function () {
+            // let ajax = new XMLHttpRequest();
+            // ajax.open("GET", "http://127.0.0.1/8080/get?user=" + user.value);
+            // ajax.sent()
+            // ajax.onload = function () {
+            //     let data = JSON.parse(ajax.response);
+            //     if (data.code == 0) {
+            //         alert("重名了");
+            //     } else if (data.code == 1) {
+            //         alert("ok");
+            //     }
+            // }
+            ajax({
+                url:'http://localhost:8080/get',
+                data:{
+                    user:user.value
+                },
+                type:'get',
+                dataType:'json',
+                succ:function(res){
+                    console.log(res);
+                },
+                error:function(error){
+                    console.log(error);
+                }
+            })
+        }
+
+        function ajax(op) {
+            let ajax = new XMLHttpRequest;
+            let {
+                type,
+                url,
+                data,
+                dataType,
+                succ,
+                error
+            } = op;
+            if (type.toUpperCase() == "GET") {
+                ajax.open("GET", url + "?" + toUrl(data));
+                ajax.send();
+            }
+            if (type.toUpperCase() == "POST") {
+                ajax.setRequestHeader('Content-Type',
+                    'application/x-www-form-urlencoded');
+                ajax.open("POST", "/post");
+                ajax.send(toUrl(data));
+            }
+            ajax.onreadystatechange = function(){
+                if(ajax.readyState==4&&ajax.status==200){
+                    succ&&succ(dataType=="json"?JSON.parse(ajax.response):ajax.response);
+                }
+            }
+            ajax.onload = function () {
+                
+            };
+            ajax.onerror = function () {
+                error&&error(ajax.status);
+            };
+            
+        }
+
+        function toUrl(obj) {
+            let data = [];
+            for (let s in obj) {
+                data.push(s + "=" + obj[s]);
+            }
+            return data.join("&");
+        }
+    </script>
+</body>
+
+</html>
