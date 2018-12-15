@@ -1,0 +1,101 @@
+张志宝
+    WV：zh627492500
+
+-----------------------------------------
+node.js 
+
+    官网：http://nodejs.cn/
+
+    下载 安装 一路回车
+
+    验证node安装完成  
+    cmd  node -v
+
+    npm 包管理器
+
+    cmd  npm -v
+
+    映射改变：
+    https://npm.taobao.org/
+
+    npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+    cnpm install 安装包名称
+
+    装nrm 修改源地址 包
+
+    cnpm install nrm -g
+
+    nrm ls 展示所有源地址
+
+    nrm test 测速
+
+    nrm use taobao 指向taobao镜像
+
+    默认npm 指向的选择的源路径
+-------------------------------------------
+node.js
+// ECMA 支持
+// DOM、BOM 不支持
+----------------------------------
+//node做服务器 服务协议/服务环境
+
+//引导服务模块 
+let http=require('http');
+
+//开启服务
+let app=http.createServer((req,res)=>{
+    //request 请求
+    //response 响应
+
+    //console.log('进来了');
+    //响应数据
+    res.wirte('123');
+   // res.end();
+
+});
+
+//监听端口
+app.listen(8080);
+
+=================================
+数据请求 解析 得到响应
+
+服务器 静态文件返回
+       数据的返回
+
+    ajax 获取后台数据
+        后台给你一个路径 你给他传几个值  会返回对应的数据
+
+    注册
+        输入账号密码
+        提交到后台
+        后台验证 数据对比
+            内容是否为空
+            账号是否存在
+            添加账号密码
+
+GET：
+    通过 req.url
+    let str=split('?')[1];
+    let data=queryString.parse(str);
+
+POST:
+    let str='';
+
+    req.on('data',(data)=>{
+        str+=data;
+    })
+
+    req.on('end',()=>{
+        //获取数据 操作数据
+    })
+
+完成登录及注册
+    并且展示 用户信息列表  POST
+
+    
+
+
+    
+

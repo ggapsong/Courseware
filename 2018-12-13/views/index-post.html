@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/ajax.js"></script>
+</head>
+<body>
+    <input type="text" name="" id="username">
+    <input type="password" name="" id="pass">
+    <button id="btn">注册</button>
+    <button id="loginBtn">登录</button>
+    <p id="tip"></p>
+</body>
+<script>
+    btn.onclick=function(){
+        ajax({
+            url:'/user/reg',
+            type:'post',
+            data:{
+                name:username.value,
+                pass:pass.value
+            },
+            success:function(res){
+                let data = JSON.parse(res);
+                tip.innerHTML=data.msg;
+            }
+        })
+    }
+
+    loginBtn.onclick=function(){
+        ajax({
+            url:'/user/login',
+            type:'post',
+            data:{
+                name:username.value,
+                pass:pass.value
+            },
+            success:function(res){
+                let data = JSON.parse(res);
+                tip.innerHTML=data.msg;
+            }
+        })
+    }
+</script>
+</html>

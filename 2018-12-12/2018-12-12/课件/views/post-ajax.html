@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="username" />
+    <input type="password" name="" id="password">
+    <button class="register">注册</button>
+</body>
+<script>
+    function ajax(
+        {data={},type='get',url=null,success=()=>{}}
+    ){
+        if(!url){ alert('请传入url'); return}
+        let ajax=new XMLHttpRequest;
+
+        if(type=='get'){
+            let str='';
+            for(item in data){
+                str+=item +'='+ data[item]+'&'
+            }
+            str=str.substring(0,str.length-1);
+            //api/addUser?name=123&pass=566
+            ajax.open(type,url+'?'+str); 
+            ajax.send();
+        }else{
+            ajax.open(type,url);
+            //请求头
+            ajax.setRequestHeader('Content-type','application/x-www-form-urlencoded')
+            ajax.send(JSON.stringify(data));
+        }
+        ajax.onload=function(){
+            success(ajax.responseText);
+        }
+    }
+
+
+    let userInp=document.querySelector('#username');
+    let passInp=document.querySelector('#password');
+    let regBtn=document.querySelector('.register');
+    regBtn.onclick=function(){
+        ajax({
+            url:'/api/addUser',
+            type:'post',
+            data:{
+                name:userInp.value,
+                pass:passInp.value
+            },
+            success:function(res){
+                console.log(res);
+                let data =JSON.parse(res)
+                console.log(data);
+                getUser()
+            }
+        })
+    }
+    getUser()
+     function getUser(){
+        ajax({
+            url:'/api/getUserList',
+            success:function(res){
+                let data =JSON.parse(res)
+                console.log(data);
+            }
+        })
+     }
+    
+</script>
+</html>

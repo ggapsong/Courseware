@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/ajax.js"></script>
+    <style>
+    *{ padding: 0; margin: 0;}
+    #loginbox{ width: 300px; border: 1px solid #DDD; border-radius: 10px; margin: 50px auto; overflow: hidden;}
+    .btnlist{ overflow: hidden;}
+    .btnlist h3{ width: 150px; float: left; text-align: center; cursor: pointer; background: #DDD; color:#F40;}
+    .btnlist .active{ background: #FFF;  color: #000;}
+    .showbox{ margin: 10px;}
+    .showbox span{ width: 60px; float: left; font-size: 14px; text-align: right;}
+    .loginbox .repass,.registerbox .login,.loginbox .register{ display:none;}
+    .userinfo{ text-align: center; }
+</style>
+</head>
+<body>
+    <!--
+        loginbox 登录
+        registerbox 注册
+    -->
+
+    {% if name %}
+    <div class="userinfo">
+        <h1>
+            {{name}} 欢迎您 ！
+            <a href="javascript:;" id="logout" >退出    </a>
+        </h1>
+    </div>
+    {% else %}
+    <div id="loginbox" class="loginbox">
+        <div class="btnlist">
+            <h3>注册</h3>
+            <h3 class="active">登录</h3>
+        </div>
+        <div class="showbox">
+            <label><span>账号</span>：<input type="text" name="" id="username" /></label><br />
+            <label><span>密码</span>：<input type="password" name="" id="password" /></label><br />
+            <label class="repass"><span>确认密码</span>：<input type="password" id="repass" /></label>
+            <br /><button class="register">注册</button>
+            <button class="login">登录</button>
+        </div>
+    </div>
+    {% endif %}
+
+    <p id="tip"></p>
+</body>
+<script>
+    let loginbox=document.querySelector('#loginbox');
+    let aTypeBtn=document.querySelectorAll('.btnlist h3');
+    if(loginbox){
+        for(let i=0 ; i<aTypeBtn.length;i++){
+            aTypeBtn[i].onclick=function(){
+                for(let i=0 ; i<aTypeBtn.length;i++){
+                    aTypeBtn[i].className='';
+                }
+                this.className="active";
+                if(i==0){
+                    loginbox.className='registerbox';
+                }else if(i==1){
+                    loginbox.className='loginbox';
+                }
+                
+            };
+        }
+    }
+
+    //注册按钮
+    let regBtn=document.querySelector('.register');
+    let logBtn=document.querySelector('.login');
+    let userName=document.querySelector('#username');
+    let passWord=document.querySelector('#password');
+    let repass=document.querySelector('#repass');
+
+    if(regBtn){
+        regBtn.onclick=function(){
+            if(repass.value==passWord.value){
+                ajax({
+                    url:'/user/reg',
+                    type:'post',
+                    data:{
+                        name:userName.value,
+                        pass:passWord.value
+                    },
+                    success:function(res){
+                        let data = JSON.parse(res);
+                        tip.innerHTML=data.msg;
+                    }
+                })
+            }else{
+                alert('密码不一致');
+            }
+            
+        }
+
+        //登录
+        logBtn.onclick=function(){
+            ajax({
+                url:'/user/login',
+                type:'post',
+                data:{
+                    name:userName.value,
+                    pass:passWord.value
+                },
+                success:function(res){
+                    let data = JSON.parse(res);
+                    tip.innerHTML=data.msg;
+                    if(!data.code){
+                    //重载页面
+                        location.reload(); 
+                    }
+                }
+            })
+        }
+    }
+    //退出
+    let logout=document.querySelector('#logout');
+    if(logout){
+        logout.onclick=function(){
+            ajax({
+                url:'/user/logout',
+                success:function(res){
+                    console.log(res);
+                    let data = JSON.parse(res);
+                    tip.innerHTML=data.msg;
+                    //重载
+                    location.reload();
+                }
+            })
+        };
+    }
+    
+
+</script>
+</html>

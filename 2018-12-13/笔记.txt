@@ -1,0 +1,121 @@
+﻿用node搭建服务
+    http模块 搭建服务
+   let app=http.createServer((req,res)=>{
+        //req 
+        //res
+        //req.url 获取请求路径
+            //页面位置
+            //数据需求
+
+        //规则  什么请求路径是请求数据的？ 
+        //      什么请求路径 是请求页面的 ？
+        // /api 要数据
+        // 
+    })
+
+    //监听端口
+    app.listen(8080);
+
+
+    fs 模块 处理文件
+        fs.readFile('url',(err,data)=>{
+            if(err){
+                失败时处理方式
+            }else{
+                res.write(data);
+                res.end();
+            }
+        })
+--------------------------------------
+npm init 初始化项目 生成package.json 
+
+express
+    官网：http://www.expressjs.com.cn/
+
+    安装： npm install express --save
+
+-------------------------------------
+//导入express模块
+let express=require('express');
+
+
+//创建服务
+let app=express();
+
+//获取
+app.get('/',(req,res)=>{
+   // console.log(123);
+
+   //console.log(req.url,666)
+
+   //响应数据
+  // res.send('');
+})
+
+//静态文件管理 确定静态文件存放位置
+app.use(express.static('./views'))
+
+//监听端口
+app.listen(8080);
+
+=====================================
+GET 
+//req.query 获取get数据
+    console.log(req.query);
+
+ POST
+    //body-parser 解析post请求数据
+    安装 ：npm install body-parser -S
+
+ //配置POST数据解析
+let encode = bodyparser.urlencoded({extended:false});
+
+//将编码解析加入到中间件当中
+app.use(encode);
+
+---------------------------------
+模板引擎：nunjucks
+    官网：https://nunjucks.bootcss.com/
+
+    安装：npm install nunjucks --save
+
+    引入模板 let nun=require(nunjucks)
+
+    配置
+        nun.configure('模板路径',{
+            autospace:true,
+            express:实例对象
+        })
+
+    使用 
+        app.get('/',(req,res)=>{
+            res.render('相对于模板路径后面的路径',{
+                传递数据
+                title:'这是name',
+                arr:[]
+            });
+        })
+---------------------------------------------
+安装 cookie-parser
+
+npm install cookie-parser
+
+导入 let cookie=require('cookie-parser');
+
+//使用cookie
+app.use(cookie());
+
+//存储cookie
+res.cookie(key,val);
+删除cookie 将val设为空
+
+//取cookie值
+    req.cookies.cookie名称
+
+===============================
+将注册、登录、退出 用express框架 实现
+
+
+
+
+

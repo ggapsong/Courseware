@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">这是新的页面</div>
+</body>
+<script>
+    function ajax(
+        {data={},type='get',url=null,success=()=>{}}
+    ){
+        if(!url){ alert('请传入url'); return}
+        let ajax=new XMLHttpRequest;
+
+        ajax.open(type,url);
+
+        ajax.send();
+
+        ajax.onload=function(){
+            success(ajax.responseText);
+        }
+    }
+
+    let box=document.querySelector('#box');
+    box.onclick=function(){
+        ajax({
+            url:'/api/newList',
+            success:function(res){
+                //console.log(res);
+                let data = JSON.parse(res);
+                console.log(data);
+            }
+        })
+    }
+    
+</script>
+</html>
